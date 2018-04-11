@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виталий Мозковой](https://up.htmlacademy.ru/adaptive/14/user/563075).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://up.htmlacademy.ru/adaptive/14/user/87167).
 
 ---
 
