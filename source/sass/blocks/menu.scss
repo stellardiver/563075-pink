@@ -1,0 +1,9 @@
+@import url("../mixins.scss");
+
+.menu__list {
+  @include margin-padding-reset;
+}
+
+.menu__link {
+  @include fonts(18px, 32px, 700, #ffffff);
+}

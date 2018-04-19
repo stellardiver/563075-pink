@@ -1,0 +1,11 @@
+@mixin margin-padding-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin fonts($font-size: 14px, $line-height: 24px, $font-weight: 400, $color: #283645) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
