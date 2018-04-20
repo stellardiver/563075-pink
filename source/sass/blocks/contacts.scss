@@ -1,0 +1,18 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.contacts__list {
+  @include reset-list;
+}
+
+.contacts__offer {
+  @include fonts(24px, 27px, 300);
+}
+
+.contacts__title {
+  @include fonts(18px, 21px, 700);
+}
+
+.contacts__info {
+  @include fonts(24px, 27px, 300, #d22856);
+}

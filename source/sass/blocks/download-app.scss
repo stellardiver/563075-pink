@@ -1,0 +1,23 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.download-app {
+  background-image: url("../../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.download-app__wrapper {
+  background-color: $dark-blue;
+}
+
+.download-app__btn {
+  @include fonts(18px, 18px, 700, #ffffff);
+}
+
+.download-app__accessibility {
+  @include fonts($font-weight: 300, $color: #ffffff);
+}
+
+.os {
+  @include reset-list;
+}
