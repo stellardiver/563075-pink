@@ -1,0 +1,21 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.comment {
+  @include margin-padding-reset;
+  background-color: $grey;
+}
+
+.comment__author {
+  @include fonts($font-weight: 700);
+}
+
+.comment__author--time {
+  @include fonts($font-weight: 300);
+  text-transform: uppercase;
+}
+
+.comment__like {
+  @include fonts(12px, 24px, $color: $raspberry);
+  text-transform: uppercase;
+}

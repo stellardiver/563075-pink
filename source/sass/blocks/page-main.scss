@@ -1,0 +1,25 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.page-main {
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.page-main--index {
+  padding-top: 460px;
+}
+
+.page-main__title {
+  @include fonts(24px, 28px, 300, #ffffff);
+}
+
+.page-main__title--form {
+  padding-top: 98px;
+  padding-bottom: 52px;
+}
+
+.page-main__title--photo {
+  padding-top: 98px;
+  padding-bottom: 80px;
+}

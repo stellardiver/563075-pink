@@ -1,0 +1,10 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.posting__offer {
+  @include fonts($line-height: 30px);
+}
+
+.posting__form {
+  background-color: $grey;
+}

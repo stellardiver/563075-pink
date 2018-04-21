@@ -1,0 +1,21 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.prices__list {
+  background-color: $grey;
+}
+
+.prices__type {
+  @include fonts(18px, 30px, 700, #ffffff);
+  text-transform: uppercase;
+}
+
+.prices__value {
+  @include fonts(24px, 30px, 300, #ffffff);
+  text-transform: uppercase;
+}
+
+.prices__data {
+  @include fonts($line-height: 30px);
+  text-transform: uppercase;
+}

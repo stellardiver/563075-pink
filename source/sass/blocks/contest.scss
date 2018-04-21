@@ -1,0 +1,66 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.contest {
+  background-color: #ffffff;
+}
+
+.contest__offer {
+  @include fonts($line-height: 30px);
+}
+
+.contest__fieldset {
+  border: none;
+}
+
+.contest__fieldset--even {
+  background-color: $grey;
+}
+
+.contest__legend {
+  @include fonts($line-height: 18px, $color: $raspberry);
+}
+
+.contest__label--top {
+  @include fonts($line-height: 30px, $color: $raspberry);
+}
+
+.contest__label--aside {
+  @include fonts(18px, 30px);
+}
+
+.contest__input--field {
+  @include fonts(18px, 30px);
+  font-family: inherit;
+}
+
+.contest__input--field::placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__input--field::-webkit-input-placeholder {
+  color: $font-color;
+}
+
+.contest__input--field::-moz-placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__input--field:-moz-placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__input--field:-ms-input-placeholder {
+  color: $font-color;
+}
+
+.contest__required {
+  @include fonts($line-height: 30px);
+}
+
+.contest__required--mark {
+  color: $raspberry;
+}

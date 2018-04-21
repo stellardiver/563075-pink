@@ -1,0 +1,12 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+
+.menu {
+  @include reset-list;
+}
+
+.menu__link {
+  @include fonts(18px, 32px, 700, #ffffff);
+  text-transform: uppercase;
+}

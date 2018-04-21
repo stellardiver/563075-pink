@@ -1,0 +1,22 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin margin-padding-reset {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin fonts($font-size: 14px, $line-height: 24px, $font-weight: 400, $color: $font-color) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+}
+
+@mixin btn-reset {
+  border: none;
+  background-color: transparent;
+}

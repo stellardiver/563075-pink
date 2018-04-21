@@ -1,0 +1,14 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.photos {
+  background-color: #ffffff;
+}
+
+.photos__list {
+  @include reset-list;
+}
+
+.photos__offer {
+  @include fonts($line-height: 30px);
+}

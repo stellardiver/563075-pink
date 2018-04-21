@@ -1,0 +1,19 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.features {
+  background-color: #ffffff;
+}
+
+.features__offer {
+  @include fonts(24px, 27px, 300);
+}
+
+.features__list {
+  @include reset-list;
+  background-color: $grey;
+}
+
+.features__title {
+  @include fonts(18px, 24px, 700, #000000);
+}
