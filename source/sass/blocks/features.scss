@@ -2,16 +2,34 @@
 @import "../variables.scss";
 
 .features {
+  width: 100%;
   background-color: #ffffff;
+}
+
+.features__offer-wrapper {
+  width: 64%;
+  margin: 0 auto;
 }
 
 .features__offer {
   @include fonts(24px, 27px, 300);
+
+  text-align: center;
 }
 
 .features__list {
   @include reset-list;
   background-color: $grey;
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.features__item-wrapper {
+  width: 82.2%;
+  margin: 0 auto;
 }
 
 .features__item--effect-24 {
@@ -26,15 +44,21 @@
   display: none;
 }
 
+.features__image--mobile {
+  order: 1;
+  margin: 0 auto;
+}
+
 .features__title {
   @include fonts(18px, 24px, 700, #000000);
+  text-align: center;
 }
 
 .features__title--effect-24 {
   @include fonts(30px, 36px, 700, #000000);
 }
 
-@media (min-width: 660px) {
+@media (min-width: $tablet-width) {
   .features__item--effect-24 {
     display: block;
   }

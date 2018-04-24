@@ -4,5 +4,7 @@
 .os {
   @include reset-list;
   @include flex-between;
+
   width: 207px;
+  margin: 0 auto;
 }

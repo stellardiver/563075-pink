@@ -25,18 +25,36 @@ a {
 
 @media (max-width: $tablet-width) {
   body {
+    @include margin-padding-reset;
+    @include fonts;
+
     max-width: 660px;
+    margin: 0 auto;
+
+    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
 @media (max-width: $desktop-width) {
   body {
+    @include margin-padding-reset;
+    @include fonts;
+
     max-width: 960px;
+    margin: 0 auto;
+
+    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
 @media (min-width: $desktop-width) {
   body {
+    @include margin-padding-reset;
+    @include fonts;
+
     max-width: 1200px;
+    margin: 0 auto;
+
+    font-family: "Open Sans", "Arial", sans-serif;
   }
 }

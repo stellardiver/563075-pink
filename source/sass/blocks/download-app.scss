@@ -26,6 +26,11 @@
   background-color: $dark-blue;
 }
 
+.download-app__wrapper-content {
+  width: 88.7%;
+  margin: 0 auto;
+}
+
 .download-app__claim {
   display: none;
 }
@@ -35,6 +40,7 @@
 
   width: 282px;
   padding: 15px 35px;
+  margin: 0 auto;
   margin-bottom: 30px;
   display: block;
   box-sizing: border-box;
@@ -46,7 +52,7 @@
 .download-app__accessibility {
   @include fonts($font-weight: 300, $color: #ffffff);
 
-  width: 230px;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
