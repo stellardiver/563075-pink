@@ -23,3 +23,9 @@
   padding-top: 98px;
   padding-bottom: 80px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main--index {
+    padding-top: 210px;
+  }
+}

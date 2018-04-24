@@ -1,0 +1,8 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.os {
+  @include reset-list;
+  @include flex-between;
+  width: 207px;
+}

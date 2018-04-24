@@ -4,9 +4,42 @@
 
 .menu {
   @include reset-list;
+
+  background-color: $font-color;
+}
+
+.menu__item {
+  padding: 20px 0;
+
+  text-align: center;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000000;
 }
 
 .menu__link {
   @include fonts(18px, 32px, 700, #ffffff);
   text-transform: uppercase;
+}
+
+@media (min-width: 661px) {
+  .menu {
+    display: flex;
+
+    background-color: transparent;
+  }
+
+  .menu__link {
+    @include fonts(18px, 18px, 400, #ffffff);
+    text-transform: none;
+  }
+
+  .menu__item {
+    padding: 45px 0;
+    border: none;
+    text-align: left;
+  }
+
+  .menu__item:not(:nth-child(4)) {
+    margin-right: 12.9%;
+  }
 }

@@ -2,6 +2,9 @@ body {
   @include margin-padding-reset;
   @include fonts;
 
+  max-width: 320px;
+  margin: 0 auto;
+
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -18,4 +21,22 @@ a {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+@media (max-width: $tablet-width) {
+  body {
+    max-width: 660px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  body {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    max-width: 1200px;
+  }
 }

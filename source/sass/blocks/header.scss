@@ -1,6 +1,80 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.header {
+  position: relative;
+
+  margin-bottom: -70px;
+}
+
+.header__container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header__transparent {
+  @include flex-between;
+  padding: 20px;
+}
+
 .header__toggle {
   @include btn-reset;
+}
+
+.header__svg {
+  fill: #ffffff;
+}
+
+.header__svg-close {
+  display: none;
+}
+
+.header__svg-open--hide {
+  display: none;
+}
+
+.header__svg-close--show {
+  display: block;
+}
+
+@media (max-width: 660px) {
+  .header__transparent {
+    background-color: $font-color;
+  }
+
+  .header__transparent--active {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  .header__navigation--hide {
+    display: none;
+  }
+
+  .header__navigation--show {
+    display: block;
+  }
+}
+
+@media (min-width: 661px) {
+  .header {
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  .header__container {
+    @include flex-between;
+  }
+
+  .header__transparent {
+    width: 150px;
+    padding: 45px 0;
+    margin-right: 17%;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__navigation {
+    width: 65%;
+  }
 }
