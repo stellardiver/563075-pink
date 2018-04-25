@@ -10,6 +10,10 @@
 }
 
 .contest__fieldset {
+  @include margin-padding-reset;
+
+  margin: 0 auto;
+
   border: none;
 }
 
@@ -18,20 +22,63 @@
 }
 
 .contest__legend {
+  margin: 0 auto;
+
   @include fonts($line-height: 18px, $color: $raspberry);
+  text-transform: uppercase;
+}
+
+.contest__wrapper {
+  display: flex;
+  width: 280px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.contest-wrapper--top {
+  flex-direction: column;
 }
 
 .contest__label--top {
+  padding-left: 15px;
+
   @include fonts($line-height: 30px, $color: $raspberry);
+  text-transform: uppercase;
 }
 
 .contest__label--aside {
+  padding-left: 30px;
+
   @include fonts(18px, 30px);
 }
 
+.contest__label--textarea {
+  text-align: center;
+}
+
 .contest__input--field {
+  width: 280px;
+
   @include fonts(18px, 30px);
   font-family: inherit;
+
+  border: 2px solid $input-border;
+}
+
+.contest__input {
+  padding: 14px 20px;
+  box-sizing: border-box;
+  border: 2px solid $input-border;
+}
+
+.contest__textarea {
+  padding: 14px 20px;
+
+  font: inherit;
+
+  @include fonts(18px, 30px);
+
+  border: 2px solid $input-border;
 }
 
 .contest__input--field::placeholder {
@@ -57,10 +104,78 @@
   color: $font-color;
 }
 
+.contest__textarea::placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__textarea::-webkit-input-placeholder {
+  color: $font-color;
+}
+
+.contest__textarea::-moz-placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__textarea:-moz-placeholder {
+  color: $font-color;
+  opacity: 1;
+}
+
+.contest__textarea:-ms-input-placeholder {
+  color: $font-color;
+}
+
 .contest__required {
   @include fonts($line-height: 30px);
+  text-transform: uppercase;
 }
 
 .contest__required--mark {
   color: $raspberry;
+}
+
+.contest__button {
+  @include btn-reset;
+  @include fonts(18px, 30px, 700, #ffffff);
+
+  margin: 0 auto;
+  padding: 16px 45px;
+
+  text-transform: uppercase;
+
+  border-radius: 3px;
+  background-color: #2aab6d;
+}
+
+@media (min-width: $tablet-width) {
+  .contest__offer {
+    width: 490px;
+    margin: 0 auto;
+
+    font-size: 18px;
+  }
+
+  .contest__fieldset:not(:first-of-type) {
+    border: 2px solid $input-border;
+  }
+
+  .contest__wrapper {
+    width: 620px;
+  }
+
+  .contest-wrapper--top {
+    flex-direction: row;
+  }
+
+  .contest__input--phone,
+  .contest__input--email {
+    width: 500px;
+  }
+
+  .contest__label--phone,
+  .contest__label--email {
+    order: 2;
+  }
 }

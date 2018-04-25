@@ -23,6 +23,11 @@ a {
   @include flex-between;
 }
 
+.container--form {
+  display: flex;
+  flex-direction: column;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;

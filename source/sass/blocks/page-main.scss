@@ -15,8 +15,13 @@
 }
 
 .page-main__title--form {
+  display: block;
+  width: 235px;
   padding-top: 98px;
   padding-bottom: 52px;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .page-main__title--photo {
@@ -27,5 +32,13 @@
 @media (min-width: $tablet-width) {
   .page-main--index {
     padding-top: 210px;
+  }
+
+  .page-main__title {
+    @include fonts(50px, 60px, 300, #ffffff);
+  }
+
+  .page-main__title--form {
+    width: 475px;
   }
 }
