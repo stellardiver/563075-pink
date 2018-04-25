@@ -13,32 +13,39 @@
 .contacts__list {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+
   @include reset-list;
 
   background-color: #ffffff;
 }
 
 .contacts__item {
-  width: 75%;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .contacts__offer {
   @include fonts(24px, 27px, 300);
 
-  width: 70%;
-  margin: 0 auto;
   padding-bottom: 40px;
+
+  text-align: center;
 }
 
 .contacts__title {
   @include fonts(18px, 21px, 700);
   display: block;
+  margin: 0;
 
   text-align: center;
 }
 
 .contacts__info {
+  margin: 0;
+
   @include fonts(24px, 27px, 300, #d22856);
 
   text-align: center;
@@ -60,7 +67,7 @@
 
 .contacts__svg-triangle {
   position: relative;
-  bottom: -40px;
+  bottom: 0;
   left: 0;
 
   width: 100%;
@@ -69,3 +76,35 @@
   fill: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts__offer {
+    width: 370px;
+    margin: 0 auto;
+
+    @include fonts(40px, 50px, 300);
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 300px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__offer {
+    width: 465px;
+    margin: 0 auto;
+
+    @include fonts(50px, 60px, 300);
+  }
+
+  .contacts__title {
+    padding-bottom: 25px;
+  }
+}

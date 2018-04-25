@@ -6,20 +6,20 @@
   background-color: #ffffff;
 }
 
-.features__offer-wrapper {
-  width: 64%;
-  margin: 0 auto;
-}
-
 .features__offer {
+  margin: 0;
+
   @include fonts(24px, 27px, 300);
 
   text-align: center;
 }
 
+.features__offer:nth-child(2) {
+  padding-bottom: 95px;
+}
+
 .features__list {
   @include reset-list;
-  background-color: $grey;
 }
 
 .features__item {
@@ -27,12 +27,15 @@
   flex-direction: column;
 }
 
-.features__item-wrapper {
-  width: 82.2%;
-  margin: 0 auto;
+.features__item--effect-24 {
+  width: 45%;
 }
 
-.features__item--effect-24 {
+.features__item--image-24 {
+  width: 238px;
+}
+
+.features__effect-24--hide {
   display: none;
 }
 
@@ -50,6 +53,8 @@
 }
 
 .features__title {
+  margin: 0;
+
   @include fonts(18px, 24px, 700, #000000);
   text-align: center;
 }
@@ -58,9 +63,25 @@
   @include fonts(30px, 36px, 700, #000000);
 }
 
+.features__text {
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
-  .features__item--effect-24 {
+  .features__effect-24--hide {
     display: block;
+  }
+
+  .features__effect-24 {
+    position: relative;
+    z-index: 10;
+
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+
+    background-color: #ffffff;
   }
 
   .features__image--mobile {
@@ -68,6 +89,87 @@
   }
 
   .features__image--tablet {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+
     display: block;
+  }
+
+  .features__offer {
+    @include fonts(40px, 50px, 300);
+  }
+
+  .features__offer:nth-child(2) {
+    width: 340px;
+
+    margin: 0 auto;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: auto;
+  }
+
+  .features__title,
+  .features__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__offer {
+    @include fonts(50px, 60px, 300);
+  }
+
+  .features__offer:nth-child(2) {
+    width: 420px;
+
+    margin: 0 auto;
+  }
+
+  .features__image--tablet {
+    display: none;
+  }
+
+  .features__image--desktop {
+    display: block;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .features__item {
+    width: 316px;
+  }
+
+  .features__title {
+    width: 220px;
+  }
+
+  .features__text {
+    width: 235px;
+  }
+
+  .features__title,
+  .features__text {
+    text-align: center;
+  }
+
+  .features__item--effect-24 {
+    width: 570px;
+  }
+
+  .features__title--effect-24,
+  .features__text--effect-24 {
+    width: 570px;
+
+    text-align: left;
   }
 }

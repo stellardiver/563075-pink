@@ -1,15 +1,26 @@
 body {
-  @include margin-padding-reset;
   @include fonts;
-
-  max-width: 320px;
-  margin: 0 auto;
 
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+}
+
+.container--features {
+  position: relative;
+
+  background-color: $grey;
+}
+
+.container--footer {
+  @include flex-between;
 }
 
 .visually-hidden {
@@ -23,38 +34,22 @@ a {
   border: 0;
 }
 
-@media (max-width: $tablet-width) {
-  body {
-    @include margin-padding-reset;
-    @include fonts;
-
+@media (min-width: 321px) and (max-width: $tablet-width) {
+  .container {
     max-width: 660px;
-    margin: 0 auto;
-
-    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
-@media (max-width: $desktop-width) {
-  body {
-    @include margin-padding-reset;
-    @include fonts;
-
+@media (min-width: 661px) and (max-width: $desktop-width) {
+  .container {
     max-width: 960px;
-    margin: 0 auto;
-
-    font-family: "Open Sans", "Arial", sans-serif;
   }
 }
 
 @media (min-width: $desktop-width) {
-  body {
-    @include margin-padding-reset;
-    @include fonts;
-
-    max-width: 1200px;
+  .container {
+    max-width: 960px;
+    padding: 0 10px;
     margin: 0 auto;
-
-    font-family: "Open Sans", "Arial", sans-serif;
   }
 }

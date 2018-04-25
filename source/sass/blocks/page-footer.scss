@@ -1,2 +1,34 @@
 @import "../mixins.scss";
 @import "../variables.scss";
+
+.page-footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.page-footer__logo {
+  display: flex;
+  width: 150px;
+}
+
+.page-footer__list {
+  display: flex;
+  width: 180px;
+  margin: 0 auto;
+}
+
+.page-footer__development {
+  display: flex;
+  width: 150px;
+  text-align: right;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--index {
+    display: block;
+  }
+}
