@@ -21,11 +21,13 @@ a {
 
 .container--footer {
   @include flex-between;
+  flex-direction: column;
 }
 
 .container--form {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -39,15 +41,23 @@ a {
   border: 0;
 }
 
-@media (min-width: 321px) and (max-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .container {
-    max-width: 660px;
+    max-width: 320px;
   }
 }
 
-@media (min-width: 661px) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .container {
-    max-width: 960px;
+    max-width: 660px;
+  }
+
+  .container--form {
+    padding: 0;
+  }
+
+  .container--footer {
+    flex-direction: row;
   }
 }
 

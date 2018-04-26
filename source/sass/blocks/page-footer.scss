@@ -8,18 +8,15 @@
 
 .page-footer__logo {
   display: flex;
-  width: 150px;
 }
 
 .page-footer__list {
   display: flex;
-  width: 180px;
   margin: 0 auto;
 }
 
 .page-footer__development {
   display: flex;
-  width: 150px;
   text-align: right;
 }
 
@@ -30,5 +27,17 @@
 @media (min-width: $tablet-width) {
   .page-footer--index {
     display: block;
+  }
+
+  .page-footer__logo {
+    width: 150px;
+  }
+
+  .page-footer__list {
+    width: 180px;
+  }
+
+  .page-footer__development {
+    width: 150px;
   }
 }

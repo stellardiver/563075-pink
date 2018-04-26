@@ -12,27 +12,34 @@
 .contest__fieldset {
   @include margin-padding-reset;
 
+  width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
 
   border: none;
 }
 
-.contest__fieldset--even {
+.contest__fieldset--achievments,
+.contest__fieldset--app {
   background-color: $grey;
 }
 
 .contest__legend {
+  width: 230px;
   margin: 0 auto;
 
   @include fonts($line-height: 18px, $color: $raspberry);
   text-transform: uppercase;
 }
 
+.contest__legend--hide {
+  display: none;
+}
+
 .contest__wrapper {
   display: flex;
-  width: 280px;
+  width: 100%;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .contest-wrapper--top {
@@ -130,17 +137,24 @@
 .contest__required {
   @include fonts($line-height: 30px);
   text-transform: uppercase;
+  text-align: center;
 }
 
 .contest__required--mark {
   color: $raspberry;
 }
 
+.contest__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
 .contest__button {
   @include btn-reset;
   @include fonts(18px, 30px, 700, #ffffff);
 
-  margin: 0 auto;
   padding: 16px 45px;
 
   text-transform: uppercase;
@@ -157,16 +171,55 @@
     font-size: 18px;
   }
 
+  .contest__form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .contest__fieldset {
+    width: 620px;
+    padding: 20px 20px;
+  }
+
   .contest__fieldset:not(:first-of-type) {
     border: 2px solid $input-border;
   }
 
-  .contest__wrapper {
+  .contest__fieldset--app {
+    order: 2;
+  }
+
+  .contest__fieldset--info {
+    order: 3;
+  }
+
+  .contest__fieldset--achievments {
+    order: 4;
+  }
+
+  .contest__fieldset--emotions {
+    order: 5;
+  }
+
+  .contest__button-wrapper {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
     width: 620px;
   }
 
-  .contest-wrapper--top {
-    flex-direction: row;
+  .contest__fieldset--achievments,
+  .contest__fieldset--app {
+    background-color: transparent;
+  }
+
+  .contest__legend {
+    width: auto;
+  }
+
+  .contest__legend--hide {
+    display: block;
   }
 
   .contest__input--phone,
@@ -177,5 +230,36 @@
   .contest__label--phone,
   .contest__label--email {
     order: 2;
+    width: 130px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest__form {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .contest__fieldset--name,
+  .contest__fieldset--app {
+    width: 435px;
+  }
+
+  .contest__fieldset--name {
+    @include margin-padding-reset;
+    margin-right: auto;
+  }
+
+  .contest__fieldset--app {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .contest__fieldset--info,
+  .contest__fieldset--achievments,
+  .contest__fieldset--emotions,
+  .contest__button-wrapper {
+    width: 940px;
   }
 }
