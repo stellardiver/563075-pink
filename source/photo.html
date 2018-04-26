@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <header class="header">
@@ -65,144 +66,151 @@
           <a class="photos__link-panorama" href="#">
             <img class="photos__image-panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
           </a>
-          <blockquote class="photos__quote comment">
-            <cite class="comment__author">Анна
-              <time class="comment__author comment__author--time" datetime="2018">(5 минут назад)</time>
-            </cite>
-            <p class="comment__text">
-              Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-            </p>
-            <p class="comment__like">Нравится:
-              <span class="comment__like comment__like--count">215</span>
-            </p>
-          </blockquote>
-        </div>
-        <ul class="photos__list">
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
+          <div class="container container--photos">
             <blockquote class="photos__quote comment">
-              <cite class="comment__author">Левон
-                <time class="comment__author comment__author--time" datetime="2018">(5 часов назад)</time>
+              <cite class="comment__author">Анна
+                <time class="comment__author comment__author--time" datetime="2018">(5 минут назад)</time>
               </cite>
-              <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="comment__like">Нравится:
-                <span class="comment__like comment__like--count">356</span>
+              <p class="comment__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
-            </blockquote>
-          </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <blockquote class="photos__quote comment">
-              <cite class="comment__author">Антон
-                <time class="comment__author comment__author--time" datetime="2018">(12 часов назад)</time>
-              </cite>
-              <p class="comment__text">Соседи будут рады!</p>
-              <p class="comment__like">Нравится:
-                <span class="comment__like comment__like--count">666</span>
-              </p>
-            </blockquote>
-          </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <blockquote class="photos__quote comment">
-              <cite class="comment__author">Борис
-                <time class="comment__author comment__author--time" datetime="2018">(20 часов назад)</time>
-              </cite>
-              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="comment__like">Нравится:
                 <span class="comment__like comment__like--count">215</span>
               </p>
             </blockquote>
-          </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <blockquote class="photos__quote comment">
-              <cite class="comment__author">Сергей
-                <time class="comment__author comment__author--time" datetime="2018">(25 часов назад)</time>
-              </cite>
-              <p class="comment__text">Самая кубанская в мире!</p>
-              <p class="comment__like">Нравится:
-                <span class="comment__like comment__like--count">4</span>
-              </p>
-            </blockquote>
-          </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <blockquote class="photos__quote comment">
-              <cite class="comment__author">Максим
-                <time class="comment__author comment__author--time" datetime="2018">(40 часов назад)</time>
-              </cite>
-              <p class="comment__text">Где снег-то?</p>
-              <p class="comment__like">Нравится:
-                <span class="comment__like comment__like--count">150</span>
-              </p>
-            </blockquote>
-          </li>
-          <li class="photos__item">
-            <a class="photos__link" href="#">
-              <img class="posts-list__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
-            </a>
-            <blockquote class="photos__quote comment">
-              <cite class="comment__author">Надежда
-                <time class="comment__author comment__author--time" datetime="2018">(45 часов назад)</time>
-              </cite>
-              <p class="comment__text">Всем GM и взаимные лайки!</p>
-              <p class="comment__like">Нравится:
-                <span class="comment__like comment__like--count">2560</span>
-              </p>
-            </blockquote>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="container container--photos">
+          <ul class="photos__list">
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Левон
+                  <time class="comment__author comment__author--time" datetime="2018">(5 часов назад)</time>
+                </cite>
+                <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">356</span>
+                </p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Антон
+                  <time class="comment__author comment__author--time" datetime="2018">(12 часов назад)</time>
+                </cite>
+                <p class="comment__text">Соседи будут рады!</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">666</span>
+                </p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Борис
+                  <time class="comment__author comment__author--time" datetime="2018">(20 часов назад)</time>
+                </cite>
+                <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">215</span>
+                </p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Сергей
+                  <time class="comment__author comment__author--time" datetime="2018">(25 часов назад)</time>
+                </cite>
+                <p class="comment__text">Самая кубанская в мире!</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">4</span>
+                </p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Максим
+                  <time class="comment__author comment__author--time" datetime="2018">(40 часов назад)</time>
+                </cite>
+                <p class="comment__text">Где снег-то?</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">150</span>
+                </p>
+              </blockquote>
+            </li>
+            <li class="photos__item">
+              <a class="photos__link" href="#">
+                <img class="photos__image" src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+              </a>
+              <blockquote class="photos__quote comment">
+                <cite class="comment__author">Надежда
+                  <time class="comment__author comment__author--time" datetime="2018">(45 часов назад)</time>
+                </cite>
+                <p class="comment__text">Всем GM и взаимные лайки!</p>
+                <p class="comment__like">Нравится:
+                  <span class="comment__like comment__like--count">2560</span>
+                </p>
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="posting">
 
         <h2 class="visually-hidden">Запостить фото</h2>
-
-        <p class="posting__offer">
-          Затмите их всех!
-          <br>Выкладывайте все, что накопилось в телефоне!
-        </p>
+        <div class="container container--photos">
+          <p class="posting__offer">
+            Затмите их всех!
+            <br>Выкладывайте все, что накопилось в телефоне!
+          </p>
+        </div>
         <form class="posting__form" method="post" action="https://echo.htmlacademy.ru">
-          <img class="posting__image" src="http://placehold.it/280x374" width="280" height="374" alt="Загруженное фото">
-          <ul class="posting__list elements">
-            <li class="elements__item">
-              <button class="elements__button elements__button--crop elements__button--active" type="button">
-                <span class="visually-hidden">Обрезать</span>
-              </button>
-              <button class="elements__button elements__button--color" type="button">
-                <span class="visually-hidden">Цвет</span>
-              </button>
-              <button class="elements__button elements__button--contrast" type="button">
-                <span class="visually-hidden">Контраст</span>
-              </button>
-            </li>
-          </ul>
-          <div class="posting__range range">
-            <div class="range__scale">
-              <div class="range__bar"></div>
+          <div class="container container--photos">
+            <img class="posting__image" src="http://placehold.it/280x374" width="280" height="374" alt="Загруженное фото">
+            <ul class="posting__list elements">
+              <li class="elements__item">
+                <button class="elements__button elements__button--crop elements__button--active" type="button">
+                  <span class="visually-hidden">Обрезать</span>
+                </button>
+                <button class="elements__button elements__button--color" type="button">
+                  <span class="visually-hidden">Цвет</span>
+                </button>
+                <button class="elements__button elements__button--contrast" type="button">
+                  <span class="visually-hidden">Контраст</span>
+                </button>
+              </li>
+            </ul>
+            <div class="posting__range range">
+              <div class="range__scale">
+                <div class="range__bar"></div>
+              </div>
+              <div class="range__toggle"></div>
             </div>
-            <div class="range__toggle"></div>
-          </div>
-          <div class="posting__buttons publicate">
-            <button class="publicate__submit" type="submit">Запостить</button>
-            <button class="publicate__reset" type="reset">Отмена</button>
+            <div class="posting__buttons publicate">
+              <button class="publicate__btn publicate__btn--submit" type="submit">Запостить</button>
+              <button class="publicate__btn publicate__btn--reset" type="reset">Отмена</button>
+            </div>
           </div>
         </form>
       </section>
     </main>
-    <footer class="page-footer page-footer--index">
-      <div class="container">
+    <footer class="page-footer">
+      <div class="container container--footer">
         <div class="page-footer__logo logo">
           <!-- позже заменю <img> на инлайновые SVG -->
           <img class="logo__image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Пинк">

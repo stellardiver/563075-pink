@@ -3,6 +3,12 @@
 
 .comment {
   @include margin-padding-reset;
+  padding: 22px 17px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
   background-color: $grey;
 }
 

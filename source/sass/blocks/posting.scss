@@ -2,6 +2,14 @@
 @import "../variables.scss";
 
 .posting__offer {
+  @include margin-padding-reset;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
   @include fonts($line-height: 30px);
 }
 
