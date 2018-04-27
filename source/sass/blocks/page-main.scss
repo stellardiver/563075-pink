@@ -45,9 +45,20 @@
 
   .page-main__title--form {
     width: 475px;
+    padding-top: 185px;
+    padding-bottom: 145px;
   }
 
   .page-main__title--photo {
     width: 360px;
+    padding-top: 185px;
+    padding-bottom: 145px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title--form {
+    padding-top: 178px;
+    padding-bottom: 104px;
   }
 }
