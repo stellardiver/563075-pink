@@ -63,11 +63,11 @@
 
         <p class="photos__offer">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photos__panorama">
-          <a class="photos__link-panorama" href="#">
-            <img class="photos__image-panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+          <a class="photos__link--panorama" href="#">
+            <img class="photos__image--panorama" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
           </a>
           <div class="container container--photos">
-            <blockquote class="photos__quote comment">
+            <blockquote class="photos__quote comment comment--panorama">
               <cite class="comment__author">Анна
                 <time class="comment__author comment__author--time" datetime="2018">(5 минут назад)</time>
               </cite>
@@ -180,27 +180,43 @@
           </p>
         </div>
         <form class="posting__form" method="post" action="https://echo.htmlacademy.ru">
-          <div class="container container--photos">
+          <div class="container container--photos container--photos-form">
             <img class="posting__image" src="http://placehold.it/280x374" width="280" height="374" alt="Загруженное фото">
             <ul class="posting__list elements">
               <li class="elements__item">
                 <button class="elements__button elements__button--crop elements__button--active" type="button">
                   <span class="visually-hidden">Обрезать</span>
                 </button>
+                <div class="posting__range posting__range--crop range">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle"></div>
+                </div>
+              </li>
+              <li class="elements__item">
                 <button class="elements__button elements__button--color" type="button">
                   <span class="visually-hidden">Цвет</span>
                 </button>
+                <div class="posting__range posting__range--color range">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle"></div>
+                </div>
+              </li>
+              <li class="elements__item">
                 <button class="elements__button elements__button--contrast" type="button">
                   <span class="visually-hidden">Контраст</span>
                 </button>
+                <div class="posting__range posting__range--contrast range">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle"></div>
+                </div>
               </li>
             </ul>
-            <div class="posting__range range">
-              <div class="range__scale">
-                <div class="range__bar"></div>
-              </div>
-              <div class="range__toggle"></div>
-            </div>
             <div class="posting__buttons publicate">
               <button class="publicate__btn publicate__btn--submit" type="submit">Запостить</button>
               <button class="publicate__btn publicate__btn--reset" type="reset">Отмена</button>

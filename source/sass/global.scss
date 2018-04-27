@@ -11,6 +11,7 @@ a {
 .container {
   max-width: 320px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .container--features {
@@ -63,6 +64,16 @@ a {
   .container--footer {
     flex-direction: row;
   }
+
+  .container--photos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container--photos-form {
+    height: 450px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -70,5 +81,11 @@ a {
     max-width: 960px;
     padding: 0 10px;
     margin: 0 auto;
+  }
+
+  .container--photos-form {
+    padding: 57px 60px 0 80px;
+
+    background-color: $grey;
   }
 }
