@@ -5,10 +5,73 @@
   background-color: #ffffff;
 }
 
+.photos__panorama {
+  margin: 0 auto;
+}
+
+.photos__image--panorama {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .photos__list {
   @include reset-list;
+
+  margin: 0 auto;
+}
+
+.photos__item:not(:last-of-type) {
+  margin-bottom: 20px;
 }
 
 .photos__offer {
   @include fonts($line-height: 30px);
+
+  width: 245px;
+  margin: 0 auto;
+  padding: 50px 0;
+
+  text-align: center;
+}
+
+.photos__image--panorama,
+.photos__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .photos__offer {
+    @include fonts($font-size: 18px);
+
+    width: 390px;
+  }
+
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photos__item:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .photos__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photos__image--panorama {
+    height: 510px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__offer {
+    width: 600px;
+  }
+
+  .photos__image {
+    height: 400px;
+  }
 }

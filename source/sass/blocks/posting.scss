@@ -2,9 +2,73 @@
 @import "../variables.scss";
 
 .posting__offer {
+  @include margin-padding-reset;
+  width: 260px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  text-align: center;
+
   @include fonts($line-height: 30px);
 }
 
 .posting__form {
+  padding: 20px 0;
   background-color: $grey;
+}
+
+.posting__range--color,
+.posting__range--contrast {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .posting__offer {
+    width: 450px;
+    font-size: 18px;
+  }
+
+  .posting__form {
+    padding: 50px 0;
+  }
+
+  .posting__image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .posting__list {
+    align-self: flex-end;
+  }
+
+  .posting__buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 280px;
+    margin-top: 75px;
+  }
+
+  .posting__range--color,
+  .posting__range--contrast {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .posting__form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    background-color: transparent;
+  }
+
+  .posting__buttons {
+    width: 410px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 145px;
+  }
 }

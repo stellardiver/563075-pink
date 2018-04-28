@@ -3,6 +3,12 @@
 
 .comment {
   @include margin-padding-reset;
+  padding: 22px 17px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
   background-color: $grey;
 }
 
@@ -15,7 +21,30 @@
   text-transform: uppercase;
 }
 
+.comment__text {
+  @include margin-padding-reset;
+}
+
 .comment__like {
+  @include margin-padding-reset;
   @include fonts(12px, 24px, $color: $raspberry);
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    width: 300px;
+    min-height: 150px;
+  }
+
+  .comment--panorama {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment--panorama {
+    width: 940px;
+  }
 }

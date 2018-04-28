@@ -1,16 +1,84 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.reviews {
+  position: relative;
+
+  margin-top: -50px;
+  padding-top: 50px;
+
+  background-color: #ffffff;
+}
+
+.reviews__list {
+  display: flex;
+  flex-direction: column;
+  width: 86.5%;
+  margin: 0 auto;
+}
+
 .review__item {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
 }
 
 .review__author {
   @include fonts(18px, 30px, 700, #000000);
 
+  display: block;
+
+  font-style: normal;
+  text-align: center;
+}
+
+.review__author-info {
+  display: none;
+
+  @include fonts(14px, 30px);
   font-style: normal;
 }
 
 .review__text {
   @include fonts($line-height: 30px);
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    margin-top: 0;
+  }
+
+  .review__author {
+    order: 2;
+
+    font-size: 20px;
+  }
+
+  .review__author-info {
+    display: block;
+    order: 2;
+  }
+
+  .review__text {
+    order: 1;
+
+    @include fonts(18px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__author-info {
+    @include fonts(18px, 30px);
+  }
+
+  .review__author {
+    font-size: 24px;
+  }
+
+  .review__text {
+    width: 690px;
+    margin: 0 auto;
+  }
 }

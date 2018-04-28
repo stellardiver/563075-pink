@@ -3,4 +3,17 @@
 
 .elements {
   @include reset-list;
+  width: 280px;
+  min-height: 203px;
+  outline: 2px solid #000000;
+}
+
+.elements__item {
+  width: 280px;
+}
+
+@media (min-width: $desktop-width) {
+  .elements {
+    width: 410px;
+  }
 }

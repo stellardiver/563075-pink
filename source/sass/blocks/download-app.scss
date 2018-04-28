@@ -2,22 +2,82 @@
 @import "../variables.scss";
 
 .download-app {
-  background-image: url("../../img/iphone-hand-mobile@1x.png");
-  background-repeat: no-repeat;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    bottom: 286px;
+    left: 0;
+
+    content: "";
+    display: inline-block;
+    width: 258px;
+    height: 286px;
+
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .download-app__wrapper {
-  background-color: $dark-blue;
+  width: 280px;
+  padding-top: 28px;
+  padding-bottom: 35px;
+  margin: 0 auto;
+}
+
+.download-app__claim {
+  display: none;
 }
 
 .download-app__btn {
   @include fonts(18px, 18px, 700, #ffffff);
+
+  padding: 15px 35px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
+  box-sizing: border-box;
+
+  border: 3px solid #ffffff;
+  border-radius: 50px;
 }
 
 .download-app__accessibility {
   @include fonts($font-weight: 300, $color: #ffffff);
+
+  text-align: center;
 }
 
-.os {
-  @include reset-list;
+@media (min-width: $tablet-width) {
+  .download-app {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 660px;
+      height: 545px;
+
+      background-image: url("http://placehld.it/660x545");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .download-app__wrapper {
+    width: 300px;
+    padding-bottom: 110px;
+    margin: 0;
+  }
+
+  .download-app__claim {
+    display: block;
+    width: 188px;
+
+    @include fonts(40px, 45px, 300, #ffffff);
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .download-app__accessibility {
+    font-size: 18px;
+  }
 }

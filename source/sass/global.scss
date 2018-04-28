@@ -1,5 +1,4 @@
 body {
-  @include margin-padding-reset;
   @include fonts;
 
   font-family: "Open Sans", "Arial", sans-serif;
@@ -7,6 +6,46 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.container--header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  margin: 0 auto;
+}
+
+.container--features {
+  position: relative;
+
+  background-color: $grey;
+}
+
+.container--footer {
+  @include flex-between;
+  flex-direction: column;
+}
+
+.container--form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+
+.container--photos {
+  margin: 0 auto;
+}
+
+.container--app {
+  max-width: 100%;
+  background-color: $dark-blue;
 }
 
 .visually-hidden {
@@ -18,4 +57,59 @@ a {
   margin: -1px;
   padding: 0;
   border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: 660px;
+  }
+
+  .container--header {
+    padding-top: 27px;
+    padding-bottom: 39px;
+  }
+
+  .container--form {
+    padding: 0;
+  }
+
+  .container--footer {
+    flex-direction: row;
+  }
+
+  .container--photos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .container--photos-form {
+    height: 450px;
+  }
+
+  .container--app {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .container--header {
+    @include margin-padding-reset;
+
+    width: 150px;
+    align-self: center;
+    margin-right: 170px;
+  }
+
+  .container--photos-form {
+    padding: 57px 60px 0 80px;
+
+    background-color: $grey;
+  }
 }

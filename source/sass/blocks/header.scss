@@ -1,6 +1,87 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.header {
+  position: relative;
+
+  margin-bottom: -70px;
+
+  background-color: $font-color;
+}
+
+.header--active {
+  background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
 .header__toggle {
   @include btn-reset;
+  @include margin-padding-reset;
+  display: none;
+}
+
+.header__toggle--show {
+  display: block;
+}
+
+.header__svg {
+  fill: #ffffff;
+}
+
+.header__svg-close {
+  display: none;
+}
+
+.header__svg-open--hide {
+  display: none;
+}
+
+.header__svg-close--show {
+  display: block;
+}
+
+.header__navigation--hide {
+  display: none;
+}
+
+.header__navigation--show {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    margin-bottom: -96px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    margin-bottom: -140px;
+
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
+
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .header__navigation--hide {
+    display: block;
+  }
+
+  .menu__item {
+    align-self: center;
+  }
+
+  .menu__item:not(:nth-child(4)) {
+    margin-right: 78px;
+  }
 }

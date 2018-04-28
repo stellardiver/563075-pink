@@ -1,2 +1,43 @@
 @import "../mixins.scss";
 @import "../variables.scss";
+
+.page-footer {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.page-footer__logo {
+  display: flex;
+}
+
+.page-footer__list {
+  display: flex;
+  margin: 0 auto;
+}
+
+.page-footer__development {
+  display: flex;
+  text-align: right;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--index {
+    display: block;
+  }
+
+  .page-footer__logo {
+    width: 150px;
+  }
+
+  .page-footer__list {
+    width: 180px;
+  }
+
+  .page-footer__development {
+    width: 150px;
+  }
+}
