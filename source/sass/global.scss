@@ -1,6 +1,5 @@
 body {
   @include fonts;
-
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -18,8 +17,12 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   margin: 0 auto;
+}
+
+.container--header-border {
+  border-bottom: 1px solid #000000;
 }
 
 .container--features {
@@ -111,5 +114,9 @@ a {
     padding: 57px 60px 0 80px;
 
     background-color: $grey;
+  }
+
+  .container--offer {
+    margin-bottom: 100px;
   }
 }

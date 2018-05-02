@@ -6,7 +6,7 @@
 
   &::before {
     position: absolute;
-    bottom: 286px;
+    top: -286px;
     left: 0;
 
     content: "";
@@ -22,7 +22,7 @@
 .download-app__wrapper {
   width: 280px;
   padding-top: 28px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   margin: 0 auto;
 }
 
@@ -33,7 +33,7 @@
 .download-app__btn {
   @include fonts(18px, 18px, 700, #ffffff);
 
-  padding: 15px 35px;
+  padding: 14px 32px 17px 36px;
   margin: 0 auto;
   margin-bottom: 30px;
   display: block;
@@ -44,6 +44,7 @@
 }
 
 .download-app__accessibility {
+  @include margin-padding-reset;
   @include fonts($font-weight: 300, $color: #ffffff);
 
   text-align: center;
@@ -72,12 +73,40 @@
     display: block;
     width: 188px;
 
-    @include fonts(40px, 45px, 300, #ffffff);
+    @include margin-padding-reset;
+    @include fonts(40px, 48px, 300, #ffffff);
     margin: 0 auto;
     margin-bottom: 28px;
+
+    text-align: center;
   }
 
   .download-app__accessibility {
     font-size: 18px;
+  }
+
+  .download-app__btn {
+    padding: 14px 0 17px 38px;
+    margin-bottom: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app__claim {
+    width: 240px;
+
+    @include fonts(50px, 58px, 300, #ffffff);
+  }
+
+  .download-app__wrapper {
+    padding: 40px 0 122px 10px;
+  }
+
+  .download-app__btn {
+    margin: 55px 0 65px;
+    padding: 14px 0 17px;
+
+    font-size: 21px;
+    text-align: center;
   }
 }
