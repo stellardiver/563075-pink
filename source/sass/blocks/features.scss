@@ -114,7 +114,7 @@
     @include reset-list;
     display: flex;
     justify-content: space-between;
-    padding-top: 58px;
+    padding: 58px 20px 0;
 
     background-color: #ffffff;
   }
@@ -268,7 +268,7 @@
   }
 
   .features__effect-24 {
-    padding-top: 0;
+    padding: 0;
 
     background-color: $grey;
   }
