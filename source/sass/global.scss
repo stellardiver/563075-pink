@@ -110,8 +110,13 @@ a {
     margin-right: 170px;
   }
 
+  .container--photos {
+    max-width: 940px;
+  }
+
   .container--photos-form {
-    padding: 57px 60px 0 80px;
+    max-width: 960px;
+    padding: 57px 60px 7px 80px;
 
     background-color: $grey;
   }
