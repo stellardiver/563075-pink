@@ -119,4 +119,19 @@ a {
   .container--offer {
     margin-bottom: 100px;
   }
+
+  .container--form-app {
+    padding: 51px 0 0 87px;
+  }
+
+  .container--form-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container--form-achievments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
