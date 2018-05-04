@@ -1,6 +1,5 @@
 body {
   @include fonts;
-
   font-family: "Open Sans", "Arial", sans-serif;
 }
 
@@ -18,8 +17,12 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
   margin: 0 auto;
+}
+
+.container--header-border {
+  border-bottom: 1px solid #000000;
 }
 
 .container--features {
@@ -73,6 +76,10 @@ a {
     padding: 0;
   }
 
+  .container--effect24 {
+    padding: 0;
+  }
+
   .container--footer {
     flex-direction: row;
   }
@@ -107,9 +114,33 @@ a {
     margin-right: 170px;
   }
 
+  .container--photos {
+    max-width: 940px;
+  }
+
   .container--photos-form {
-    padding: 57px 60px 0 80px;
+    max-width: 960px;
+    padding: 57px 60px 7px 80px;
 
     background-color: $grey;
+  }
+
+  .container--offer {
+    margin-bottom: 100px;
+  }
+
+  .container--form-app {
+    padding: 51px 0 0 87px;
+  }
+
+  .container--form-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .container--form-achievments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

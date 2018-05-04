@@ -7,6 +7,7 @@
 
 .photos__panorama {
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .photos__image--panorama {
@@ -29,7 +30,7 @@
 
   width: 245px;
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 45px 0 49px 0;
 
   text-align: center;
 }
@@ -41,9 +42,10 @@
 
 @media (min-width: $tablet-width) {
   .photos__offer {
-    @include fonts($font-size: 18px);
+    @include fonts($font-size: 18px, $line-height: 30px);
 
-    width: 390px;
+    width: 445px;
+    padding: 92px 0 76px;
   }
 
   .photos__list {
@@ -61,6 +63,10 @@
     height: 300px;
   }
 
+  .photos__panorama {
+    margin-bottom: 50px;
+  }
+
   .photos__image--panorama {
     height: 510px;
   }
@@ -69,9 +75,18 @@
 @media (min-width: $desktop-width) {
   .photos__offer {
     width: 600px;
+    padding-bottom: 88px;
+  }
+
+  .photos__image--panorama {
+    height: 506px;
   }
 
   .photos__image {
     height: 400px;
+  }
+
+  .photos__item:not(:nth-last-child(-n+3)) {
+    margin-bottom: 54px;
   }
 }

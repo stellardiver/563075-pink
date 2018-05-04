@@ -4,7 +4,8 @@
 .elements {
   @include reset-list;
   width: 280px;
-  min-height: 203px;
+  min-height: 150px;
+  margin-bottom: 43px;
   outline: 2px solid #000000;
 }
 
@@ -15,5 +16,7 @@
 @media (min-width: $desktop-width) {
   .elements {
     width: 410px;
+    min-height: 205px;
+    margin-bottom: 140px;
   }
 }

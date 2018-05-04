@@ -8,18 +8,18 @@
 }
 
 .page-main--index {
-  padding-top: 460px;
+  padding-top: 462px;
 }
 
 .page-main__title {
-  @include fonts(24px, 28px, 300, #ffffff);
+  @include fonts(24px, 29px, 300, #ffffff);
 }
 
 .page-main__title--form {
   display: block;
   width: 235px;
   padding-top: 98px;
-  padding-bottom: 52px;
+  padding-bottom: 54px;
   margin: 0 auto;
 
   text-align: center;
@@ -28,7 +28,7 @@
 .page-main__title--photo {
   width: 175px;
   padding-top: 98px;
-  padding-bottom: 80px;
+  padding-bottom: 83px;
   margin: 0 auto;
 
   text-align: center;
@@ -46,19 +46,25 @@
   .page-main__title--form {
     width: 475px;
     padding-top: 185px;
-    padding-bottom: 145px;
+    padding-bottom: 80px;
   }
 
   .page-main__title--photo {
     width: 360px;
     padding-top: 185px;
-    padding-bottom: 145px;
+    padding-bottom: 140px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main__title--form {
-    padding-top: 178px;
-    padding-bottom: 104px;
+    padding-top: 202px;
+    padding-bottom: 101px;
+    width: 750px;
+  }
+
+  .page-main__title--photo {
+    padding-top: 202px;
+    padding-bottom: 101px;
   }
 }
