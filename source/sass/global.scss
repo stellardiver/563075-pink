@@ -1,4 +1,6 @@
 body {
+  min-width: 320px;
+
   @include fonts;
   font-family: "Open Sans", "Arial", sans-serif;
 }
