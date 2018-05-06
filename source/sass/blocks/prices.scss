@@ -145,9 +145,9 @@
 
 @media (min-width: $desktop-width) {
   .prices__list {
-    max-width: 940px;
-    padding-top: 30px;
-    padding-bottom: 91px;
+    max-width: 960px;
+    box-sizing: border-box;
+    padding: 30px 10px 91px;
   }
 
   .prices__table {

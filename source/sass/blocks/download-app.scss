@@ -16,6 +16,11 @@
 
     background-image: url("../../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/iphone-hand-mobile@2x.png");
+      background-size: 258px auto;
+    }
   }
 }
 
@@ -52,18 +57,33 @@
 
 @media (min-width: $tablet-width) {
   .download-app {
+    max-width: 660px;
+    margin: 0 auto;
+
     &::before {
+      top: 8px;
+      left: -3%;
+
       content: "";
       display: inline-block;
       width: 660px;
       height: 545px;
 
-      background-image: url("http://placehld.it/660x545");
+      background-image: url("../../img/iphone-hand-tablet@1x.png");
       background-repeat: no-repeat;
+      background-size: 700px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/iphone-hand-tablet@2x.png");
+        background-size: 700px auto;
+      }
     }
   }
 
   .download-app__wrapper {
+    position: relative;
+    z-index: 10;
+
     width: 300px;
     padding-bottom: 110px;
     margin: 0;
@@ -86,12 +106,36 @@
   }
 
   .download-app__btn {
-    padding: 14px 0 17px 38px;
+    padding: 14px 0 17px;
     margin-bottom: 43px;
+    text-align: center;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .download-app {
+    max-width: 960px;
+
+    &::before {
+      top: 28px;
+      left: 28px;
+
+      content: "";
+      display: inline-block;
+      width: 900px;
+      height: 645px;
+
+      background-image: url("../../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-size: 1050px auto;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
+    }
+  }
+
   .download-app__claim {
     width: 240px;
 
@@ -99,7 +143,7 @@
   }
 
   .download-app__wrapper {
-    padding: 40px 0 122px 10px;
+    padding: 40px 0 122px 0;
   }
 
   .download-app__btn {
@@ -108,5 +152,14 @@
 
     font-size: 21px;
     text-align: center;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 659px) {
+  .download-app {
+    &::before {
+      left: 50%;
+      margin-left: -120px;
+    }
   }
 }

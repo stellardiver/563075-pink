@@ -51,6 +51,11 @@
   .header {
     margin-bottom: -96px;
   }
+
+  .header__logo {
+    width: 147px;
+    height: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
