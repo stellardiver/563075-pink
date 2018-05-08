@@ -200,6 +200,37 @@
   .features__paragraph {
     display: block;
   }
+
+  .features__timer {
+    position: relative;
+
+    width: 175px;
+    height: 175px;
+    border: 15px solid $raspberry;
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      bottom: -32px;
+      left: -30px;
+      z-index: -1;
+
+      content: "";
+      width: 238px;
+      height: 276px;
+      display: block;
+
+      background-image: url("../../img/icon-timer-tablet.svg");
+    }
+  }
+
+  .features__text-24 {
+    @include fonts(96px, 149px, 700, $raspberry);
+
+    display: block;
+    padding-top: 12px;
+    text-align: center;
+  }
 }
 
 @media (min-width: $desktop-width) {

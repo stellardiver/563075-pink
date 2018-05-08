@@ -10,8 +10,8 @@
   top: -31px;
   left: 0;
 
-  max-width: 100%;
-  min-height: 38px;
+  max-width: 320px;
+  max-height: 38px;
   margin: 0 auto;
   display: block;
 
@@ -35,6 +35,8 @@
 }
 
 .prices__data {
+  position: relative;
+
   padding: 15px 0 15px 22px;
 
   @include fonts($line-height: 30px);
@@ -43,6 +45,35 @@
   background-color: #ffffff;
   border-bottom: 2px solid $input-border;
   border-right: 2px solid $input-border;
+
+  &::after {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+
+    content: "";
+    display: block;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.prices__data--yes {
+  &::after {
+    width: 31px;
+    height: 21px;
+
+    background-image: url("../../img/icon-yes.svg");
+  }
+}
+
+.prices__data--no {
+  &::after {
+    width: 27px;
+    height: 26px;
+
+    background-image: url("../../img/icon-no.svg");
+  }
 }
 
 .prices__list {
@@ -69,6 +100,35 @@
   padding: 16px 0 20px;
 
   background-color: $font-color;
+}
+
+.prices__header-data--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    display: block;
+    width: 74px;
+    height: 73px;
+    background-image: url("../../img/bg-hit.svg");
+  }
+
+  &::after {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+
+    content: "Хит";
+    display: block;
+
+    @include fonts($line-height: 30px, $font-weight: 600, $color: #ffffff);
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+  }
 }
 
 .prices__column:first-child .prices__header-data {
@@ -124,6 +184,13 @@
     padding: 7px 0 7px 15px;
 
     text-transform: none;
+
+    &::after {
+      right: 50%;
+      top: 50%;
+      margin-top: -13px;
+      margin-right: -17px;
+    }
   }
 
   .prices__column:not(:first-child) .prices__data {
@@ -134,12 +201,25 @@
     font-size: 16px;
   }
 
-  .prices__value {
-    font-size: 18px;
+  .prices__header-data--hit {
+    &::before {
+      top: 0;
+      left: 0;
+
+      content: "";
+      width: 61px;
+      height: 61px;
+      background-image: url("../../img/bg-hit-tablet.svg");
+    }
+
+    &::after {
+      top: 6px;
+      left: 6px;
+    }
   }
 
-  .prices__toggles {
-    display: none;
+  .prices__value {
+    font-size: 18px;
   }
 }
 
@@ -163,6 +243,23 @@
     padding: 18px 0;
   }
 
+  .prices__header-data--hit {
+    &::before {
+      top: 0;
+      left: 0;
+
+      content: "";
+      width: 74px;
+      height: 73px;
+      background-image: url("../../img/bg-hit.svg");
+    }
+
+    &::after {
+      top: 12px;
+      left: 10px;
+    }
+  }
+
   .prices__data {
     padding: 15px 0 15px 20px;
 
@@ -175,5 +272,11 @@
 
   .prices__value {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: $tablet-width) {
+  .prices__svg-triangle {
+    max-width: 100%;
   }
 }
