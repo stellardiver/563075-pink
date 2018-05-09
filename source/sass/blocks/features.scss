@@ -206,13 +206,14 @@
 
     width: 175px;
     height: 175px;
-    border: 15px solid $raspberry;
+    margin: 56px 0 0 18px;
+    border: 14px solid $raspberry;
     border-radius: 50%;
 
     &::before {
       position: absolute;
       bottom: -32px;
-      left: -30px;
+      left: -31px;
       z-index: -1;
 
       content: "";
@@ -228,7 +229,7 @@
     @include fonts(96px, 149px, 700, $raspberry);
 
     display: block;
-    padding-top: 12px;
+    padding-top: 8px;
     text-align: center;
   }
 }
@@ -377,5 +378,37 @@
 
   .features__paragraph {
     display: none;
+  }
+
+  .features__timer {
+    position: relative;
+
+    width: 220px;
+    height: 220px;
+    margin: 69px 0 0 33px;
+    border: 17px solid $raspberry;
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      bottom: -39px;
+      left: -39px;
+      z-index: -1;
+
+      content: "";
+      width: 298px;
+      height: 345px;
+      display: block;
+
+      background-image: url("../../img/icon-timer.svg");
+    }
+  }
+
+  .features__text-24 {
+    @include fonts(120px, 186px, 700, $raspberry);
+
+    display: block;
+    padding-top: 10px;
+    text-align: center;
   }
 }

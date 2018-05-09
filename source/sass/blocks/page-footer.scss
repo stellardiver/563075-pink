@@ -7,7 +7,19 @@
 }
 
 .page-footer__logo {
-  display: flex;
+  &:hover,
+  &:focus {
+    fill: $raspberry;
+  }
+
+  &:active {
+    fill: $font-color;
+    opacity: 0.3;
+  }
+}
+
+.page-footer__logo--desktop {
+  display: none;
 }
 
 .page-footer__list {
@@ -29,15 +41,21 @@
     display: block;
   }
 
-  .page-footer__logo {
-    width: 150px;
-  }
-
   .page-footer__list {
     width: 180px;
   }
 
   .page-footer__development {
     width: 150px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo--mobile {
+    display: none;
+  }
+
+  .page-footer__logo--desktop {
+    display: block;
   }
 }

@@ -4,3 +4,14 @@
 .development__title {
   @include fonts($line-height: 18px);
 }
+
+.development__logo {
+  &:hover,
+  &:focus {
+    fill: $font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
