@@ -6,7 +6,13 @@
   display: flex;
   width: 60px;
   margin: 0 auto;
+  padding-bottom: 70px;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+.slider--prices {
+  padding-bottom: 48px;
 }
 
 .slider__toggle {
@@ -28,7 +34,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .slider {
+  .slider--prices {
+    display: none;
+  }
+
+  .slider--reviews {
+    padding-bottom: 73px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider--reviews {
     display: none;
   }
 }

@@ -51,14 +51,14 @@
 .contacts__info {
   margin: 0;
 
-  @include fonts(24px, 30px, 300, #d22856);
+  @include fonts(24px, 30px, 300, $raspberry);
 
   text-align: center;
 }
 
 .contacts__svg-triangle {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  top: 413px;
   left: 0;
 
   width: 100%;
@@ -67,13 +67,37 @@
   fill: #ffffff;
 }
 
+.contacts__link {
+  margin: 0;
+
+  @include fonts(24px, 30px, 300, $raspberry);
+
+  text-align: center;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $font-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $font-color;
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 47px;
+  }
+
   .contacts__offer {
     width: 370px;
     margin: 0 auto;
     padding-bottom: 40px;
 
-    @include fonts(40px, 50px, 300);
+    @include fonts(40px, 48px, 300);
   }
 
   .contacts__list {
@@ -93,6 +117,13 @@
   .contacts__item:last-child {
     width: 220px;
     margin: 0 auto;
+    padding-bottom: 28px;
+  }
+
+  .contacts__svg-triangle {
+    top: 406px;
+
+    height: 61.905px;
   }
 }
 
@@ -120,13 +151,15 @@
   .contacts__item:nth-child(2) {
     order: 2;
   }
+
+  .contacts__svg-triangle {
+    top: 379px;
+    height: 90px;
+  }
 }
 
 @media (max-width: $mobile-width) {
   .contacts__map {
-    position: relative;
-    z-index: -1;
-
     width: 100%;
     min-height: 200px;
 
