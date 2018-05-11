@@ -2,15 +2,209 @@
 @import "../variables.scss";
 
 .elements {
+  position: relative;
+
   @include reset-list;
+  display: flex;
+  justify-content: space-evenly;
   width: 280px;
-  min-height: 150px;
-  margin-bottom: 43px;
-  outline: 2px solid #000000;
+  min-height: 155px;
+  padding-top: 37px;
+  box-sizing: border-box;
+
+  &::after {
+    position: absolute;
+    top: 154px;
+
+    content: "";
+    width: 320px;
+    height: 1px;
+    display: block;
+
+    background-color: #dddfe0;
+  }
 }
 
 .elements__item {
-  width: 280px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.elements__button {
+  @include margin-padding-reset;
+  @include btn-reset;
+}
+
+.elements__button--contrast {
+  margin: 0 auto;
+}
+
+.elements__input {
+  position: absolute;
+
+  width: 240px;
+  appearance: none;
+}
+
+.elements__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6px;
+
+  box-sizing: border-box;
+  background-color: $grey;
+  border: 2px solid $raspberry;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $raspberry;
+  }
+}
+
+.elements__input::-webkit-slider-runnable-track {
+  height: 2px;
+  cursor: pointer;
+  background-color: $font-color;
+}
+
+.elements__input::-ms-track {
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.elements__input::-ms-fill {
+  background-color: $font-color;
+}
+
+.elements__input::-ms-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $grey;
+  border: 2px solid $raspberry;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $raspberry;
+  }
+}
+
+.elements__input::-moz-range-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $grey;
+  border: 2px solid $raspberry;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $raspberry;
+  }
+}
+
+.elements__input::-moz-range-track {
+  height: 2px;
+  cursor: pointer;
+  background-color: $font-color;
+}
+
+.elements__input--crop {
+  top: 118px;
+  right: 20px;
+}
+
+.elements__svg {
+  fill: $font-color;
+  opacity: 0.3;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.elements__svg--active {
+  fill: $raspberry;
+  opacity: 1;
+}
+
+.elements__label,
+.elements__item--fill,
+.elements__item--contrast {
+  width: 50px;
+}
+
+.elements__label--contrast {
+  width: 32px;
+  margin-left: 5px;
+}
+
+.elements__input--fill,
+.elements__input--contrast {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .elements {
+    justify-content: row;
+    flex-wrap: wrap;
+    padding-top: 0;
+    margin-bottom: 68px;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .elements__input--fill,
+  .elements__input--contrast {
+    display: block;
+  }
+
+  .elements__item {
+    width: 265px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 18px 9px 7px;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .elements__item--crop {
+    padding-top: 0;
+  }
+
+  .elements__input {
+    position: static;
+
+    width: 203px;
+  }
+
+  .elements__svg {
+    fill: $raspberry;
+    opacity: 1;
+  }
+
+  .elements__svg--crop {
+    width: 22px;
+    height: 22px;
+  }
+
+  .elements__svg--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .elements__svg--contrast {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -18,5 +212,33 @@
     width: 410px;
     min-height: 205px;
     margin-bottom: 140px;
+  }
+
+  .elements__item {
+    width: 400px;
+    padding: 0 30px 5px 0;
+  }
+
+  .elements__item--crop {
+    padding-top: 0;
+  }
+
+  .elements__input {
+    width: 285px;
+  }
+
+  .elements__svg--crop {
+    width: 48px;
+    height: 48px;
+  }
+
+  .elements__svg--fill {
+    width: 48px;
+    height: 48px;
+  }
+
+  .elements__svg--contrast {
+    width: 31.92px;
+    height: 31.92px;
   }
 }

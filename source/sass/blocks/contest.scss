@@ -95,10 +95,128 @@
   text-transform: uppercase;
 }
 
-.contest__label--aside {
-  padding-left: 30px;
+.contest__label--checkbox {
+  position: relative;
+
+  padding-left: 70px;
 
   @include fonts(18px, 30px);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-top: -4px;
+
+    background-color: #ffffff;
+    border: 2px solid $input-border;
+  }
+
+  &::after {
+    position: absolute;
+    top: 7px;
+    left: 9px;
+
+    content: "";
+    display: none;
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../../img/icon-checkmark.svg");
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid $font-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $raspberry;
+    }
+  }
+}
+
+.contest__input--checkbox:checked + .contest__label--checkbox {
+  &::after {
+    display: block;
+  }
+}
+
+.contest__input--checkbox:focus + .contest__label--checkbox {
+  &::before {
+    border: 2px solid $font-color;
+  }
+}
+
+.contest__label--radio-btn {
+  position: relative;
+
+  padding-left: 69px;
+
+  @include fonts(18px, 30px);
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    width: 35px;
+    height: 35px;
+    display: block;
+    margin-top: -3px;
+
+    background-color: #ffffff;
+    border: 2px solid $input-border;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 9px;
+    left: 12px;
+
+    content: "";
+    display: none;
+    width: 15px;
+    height: 15px;
+
+    background-color: $raspberry;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border: 2px solid $font-color;
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid $raspberry;
+    }
+  }
+}
+
+.contest__input--radio-btn:checked + .contest__label--radio-btn {
+  &::after {
+    display: block;
+  }
+}
+
+.contest__input--radio-btn:focus + .contest__label--radio-btn {
+  &::before {
+    border: 2px solid $font-color;
+  }
 }
 
 .contest__label--textarea {
@@ -119,6 +237,17 @@
   padding: 14px 20px 15px;
   box-sizing: border-box;
   border: 2px solid $input-border;
+}
+
+.contest__input--checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.contest__input--radio-btn {
+  position: absolute;
+  opacity: 0;
 }
 
 .contest__textarea {
@@ -249,7 +378,7 @@
 
   .contest__fieldset--app {
     order: 2;
-    padding: 48px 0 11px 73px;
+    padding: 48px 0 11px 58px;
     margin-bottom: 57px;
   }
 
@@ -261,7 +390,7 @@
 
   .contest__fieldset--achievments {
     order: 4;
-    padding: 48px 0 6px 70px;
+    padding: 48px 0 6px 58px;
     margin-bottom: 57px;
   }
 
@@ -286,7 +415,36 @@
   }
 
   .contest__wrapper--top-info {
+    position: relative;
+
     margin-bottom: 29px;
+
+    &::after {
+      position: absolute;
+      top: 2px;
+      right: 60px;
+
+      content: "";
+      width: 60px;
+      height: 60px;
+      display: block;
+
+      background-color: $input-border;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  .contest__wrapper--phone {
+    &::after {
+      background-image: url("../../img/icon-phone.svg");
+    }
+  }
+
+  .contest__wrapper--email {
+    &::after {
+      background-image: url("../../img/icon-mail.svg");
+    }
   }
 
   .contest__wrapper--top-info:nth-child(2) {
@@ -321,6 +479,11 @@
 
   .contest__label--top {
     padding: 0;
+  }
+
+  .contest__label--checkbox,
+  .contest__label--radio-btn {
+    padding-left: 59px;
   }
 
   .contest__label--textarea {
@@ -420,12 +583,12 @@
 
   .contest__wrapper--aside:nth-child(3) {
     order: 2;
-    margin-right: 26px;
+    margin-right: 35px;
   }
 
   .contest__wrapper--aside:nth-child(4) {
     order: 5;
-    margin-right: 26px;
+    margin-right: 35px;
   }
 
   .contest__wrapper--aside:nth-child(5) {
@@ -498,7 +661,7 @@
   }
 
   .contest__fieldset--achievments {
-    padding: 48px 0 8px 75px;
+    padding: 48px 0 8px 58px;
   }
 
   .contest__fieldset--emotions {

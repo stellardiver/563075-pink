@@ -16,7 +16,37 @@
 }
 
 .comment--panorama {
+  position: relative;
+
   padding: 18px 18px 19px;
+
+  &::before {
+    position: absolute;
+    top: -137px;
+    right: 0;
+    z-index: 10;
+
+    content: "";
+    width: 140px;
+    height: 36px;
+    display: block;
+
+    background-color: $raspberry;
+  }
+
+  &::after {
+    position: absolute;
+    top: -131px;
+    left: 160px;
+    z-index: 11;
+
+    content: "Панорама дня";
+    display: block;
+    width: 140px;
+
+    @include fonts(12px, 24px, 600, #ffffff);
+    text-transform: uppercase;
+  }
 }
 
 .comment__author {
@@ -35,10 +65,26 @@
 }
 
 .comment__like {
+  position: relative;
+
   @include margin-padding-reset;
   @include fonts(12px, 24px, $color: $raspberry);
 
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    content: "";
+    width: 12.545px;
+    height: 11.99px;
+    display: block;
+
+    background-image: url("../../img/icon-heart.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .comment__like--padding {
@@ -63,12 +109,33 @@
     min-height: auto;
     margin: 0 auto;
     padding: 23px 27px 24px;
+
+    &::before {
+      top: -453px;
+    }
+
+    &::after {
+      top: -447px;
+      left: 500px;
+    }
+  }
+
+  .comment__like {
+    margin-top: auto;
+
+    &::before {
+      left: 228px;
+    }
   }
 
   .comment__like--panorama {
     position: absolute;
     right: 59px;
     top: 24px;
+
+    &::before {
+      left: 105px;
+    }
   }
 
   .comment__like--padding {
@@ -79,16 +146,21 @@
   .comment__text {
     padding-bottom: 0;
   }
-
-  .comment__like {
-    margin-top: auto;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .comment--panorama {
     width: 940px;
     padding: 24px 27px 23px;
+
+    &::before {
+      top: -452px;
+    }
+
+    &::after {
+      top: -446px;
+      left: 820px;
+    }
   }
 
   .comment__like--panorama {
