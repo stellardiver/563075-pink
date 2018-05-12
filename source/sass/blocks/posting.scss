@@ -1,6 +1,10 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.posting {
+  margin-bottom: 40px;
+}
+
 .posting__offer {
   @include margin-padding-reset;
   width: 260px;
@@ -64,6 +68,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .posting {
+    margin-bottom: 100px;
+  }
+
   .posting__offer {
     padding-top: 39px;
     padding-bottom: 66px;

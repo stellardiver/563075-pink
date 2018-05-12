@@ -2,6 +2,8 @@
 @import "../variables.scss";
 
 .contest {
+  margin-bottom: 55px;
+
   background-color: #ffffff;
 }
 
@@ -348,6 +350,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contest {
+    margin-bottom: 89px;
+  }
+
   .contest__offer {
     width: 490px;
     margin: 0 auto;
@@ -547,6 +553,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contest {
+    margin-bottom: 72px;
+  }
+
   .contest__offer {
     width: 765px;
   }

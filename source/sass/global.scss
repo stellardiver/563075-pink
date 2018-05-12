@@ -34,7 +34,8 @@ a {
 }
 
 .container--footer {
-  @include flex-between;
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -84,6 +85,8 @@ a {
 
   .container--footer {
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 620px;
   }
 
   .container--photos {
@@ -150,5 +153,9 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .container--footer {
+    max-width: 940px;
   }
 }
