@@ -24,6 +24,15 @@
   align-self: center;
   background-color: rgba($color: $font-color, $alpha: 0.3);
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: rgba($color: $font-color, $alpha: 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color: $font-color, $alpha: 0.1);
+  }
 }
 
 .slider__toggle--active {
@@ -31,6 +40,15 @@
   height: 10px;
   border: 3px solid $font-color;
   background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+  }
+
+  &:active {
+    background-color: #ffffff;
+  }
 }
 
 @media (min-width: $tablet-width) {

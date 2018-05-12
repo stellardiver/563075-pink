@@ -46,6 +46,17 @@
 
   border: 3px solid #ffffff;
   border-radius: 50px;
+
+  &:hover,
+  &:focus {
+    color: $raspberry;
+
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: rgba($color: $raspberry, $alpha: 0.3);
+  }
 }
 
 .download-app__accessibility {

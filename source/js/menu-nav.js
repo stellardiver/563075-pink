@@ -4,6 +4,9 @@ var svgClose = document.querySelector(".header__svg-close");
 var menu = document.querySelector(".header__navigation");
 var header = document.querySelector(".header");
 var container = document.querySelector(".container--header");
+var mapBlock = document.querySelector(".contacts__map");
+
+mapBlock.classList.add("contacts__map--hide-marker");
 
 menu.classList.add("header__navigation--hide");
 header.classList.add("header--active");

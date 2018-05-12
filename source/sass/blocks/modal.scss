@@ -7,6 +7,7 @@
   width: 320px;
   padding: 45px 0 0;
   margin-left: -160px;
+  display: none;
 
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 #cccccc;
@@ -81,6 +82,16 @@
 
   background-color: #2aab6d;
   border-radius: 5px;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #2aab6d;
+  }
 }
 
 @media (min-width: $tablet-width) {

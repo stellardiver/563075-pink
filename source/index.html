@@ -38,7 +38,7 @@
         <nav class="header__navigation">
           <ul class="header__list menu">
             <li class="menu__item">
-              <a class="menu__link">Главная</a>
+              <a class="menu__link menu__link--active">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="photo.html">Фотографии</a>
@@ -293,11 +293,10 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-          <svg class="contacts__svg-triangle" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" preserveAspectRatio="none">
-            <use xlink:href="img/sprite.svg#contacts-triangle"></use>
-          </svg>
-        </div>
+        <svg class="contacts__svg-triangle" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" preserveAspectRatio="none">
+          <use xlink:href="img/sprite.svg#contacts-triangle"></use>
+        </svg>
+        <div class="contacts__map" id="contacts__map"></div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
@@ -335,5 +334,8 @@
       </div>
     </footer>
     <script src="js/menu-nav.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzlMsK92es0tuxqKuCMLbJh77JJkEY1j0&callback=initMap">
+		</script>
   </body>
 </html>

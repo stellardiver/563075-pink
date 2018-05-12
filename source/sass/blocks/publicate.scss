@@ -19,6 +19,16 @@
   color: $raspberry;
 
   border-color: $raspberry;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $raspberry;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .publicate__btn--reset {
@@ -27,6 +37,19 @@
   color: rgba($color: $font-color, $alpha: 0.1);
 
   border-color: rgba($color: $font-color, $alpha: 0.1);
+
+  &:hover,
+  &:focus {
+    color: rgba($color: $font-color, $alpha: 0.3);
+
+    border-color: rgba($color: $font-color, $alpha: 0.3);
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: rgba($color: $font-color, $alpha: 0.3);
+    border-color: rgba($color: $font-color, $alpha: 0);
+  }
 }
 
 @media (min-width: $tablet-width) {

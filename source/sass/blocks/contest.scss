@@ -233,6 +233,15 @@
   font-family: inherit;
 
   border: 2px solid $input-border;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $font-color;
+  }
+
+  &:active {
+    border: 2px solid $raspberry;
+  }
 }
 
 .contest__input {
@@ -343,6 +352,20 @@
 
   border-radius: 3px;
   background-color: #2aab6d;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: #2aab6d;
+  }
+
+  &:disabled {
+    background-color: $input-border;
+  }
 }
 
 .contest__required--fill {
