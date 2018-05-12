@@ -1,0 +1,157 @@
+@import "../mixins.scss";
+@import "../variables.scss";
+
+.modal {
+  position: fixed;
+
+  width: 320px;
+  padding: 45px 0 0;
+  margin-left: -160px;
+
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px 0 #cccccc;
+}
+
+.modal--success {
+  top: 47%;
+  left: 50%;
+}
+
+.modal--failure {
+  top: 5%;
+  left: 50%;
+}
+
+.modal__header {
+  @include margin-padding-reset;
+  @include fonts(18px, 24px, 700, #000000);
+
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.modal__header--success {
+  width: 240px;
+}
+
+.modal__header--failure {
+  width: 200px;
+}
+
+.modal__text {
+  @include margin-padding-reset;
+
+  width: 275px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.modal__text--success {
+  margin-bottom: 35px;
+}
+
+.modal__text--failure {
+  margin-bottom: 40px;
+}
+
+.modal__wrapper {
+  width: 320px;
+}
+
+.modal__wrapper--success {
+  padding: 50px 0;
+  background-color: $grey;
+}
+
+.modal__wrapper--failure {
+  padding-bottom: 50px;
+}
+
+.modal__button {
+  @include btn-reset;
+  @include fonts(18px, 30px, 700, #ffffff);
+  width: 280px;
+  display: block;
+  padding: 18px;
+  margin: 0 auto;
+
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border-radius: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 460px;
+    margin-left: -230px;
+  }
+
+  .modal__header {
+    @include fonts(30px, 40px, 700, #000000);
+
+    width: 215px;
+
+    text-align: center;
+  }
+
+  .modal__text {
+    font-size: 18px;
+  }
+
+  .modal__wrapper {
+    width: 460px;
+  }
+
+  .modal__text--success {
+    width: 350px;
+  }
+
+  .modal__text--failure {
+    width: 325px;
+  }
+
+  .modal__paragraph {
+    display: none;
+  }
+
+  .modal__button {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    width: 780px;
+    margin-left: -390px;
+  }
+
+  .modal__header {
+    width: 410px;
+  }
+
+  .modal__wrapper {
+    width: 780px;
+  }
+
+  .modal__wrapper--failure {
+    padding: 50px 0;
+
+    background-color: $grey;
+  }
+
+  .modal__button--success {
+    width: 460px;
+  }
+
+  .modal__text--failure {
+    width: 365px;
+    margin-bottom: 60px;
+  }
+
+  .modal__text--success {
+    width: 400px;
+  }
+}
