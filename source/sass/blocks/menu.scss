@@ -35,6 +35,7 @@
 @media (min-width: $desktop-width) {
   .menu {
     display: flex;
+    flex-wrap: wrap;
     width: 617px;
 
     background-color: transparent;
