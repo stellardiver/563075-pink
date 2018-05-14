@@ -82,7 +82,7 @@
     height: 11.99px;
     display: block;
 
-    background-image: url("../../img/icon-heart.svg");
+    background-image: url("../img/icon-heart.svg");
     background-repeat: no-repeat;
   }
 }
@@ -95,6 +95,18 @@
   .comment {
     width: 300px;
     min-height: 150px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .comment {
+      position: relative;
+    }
+
+    .comment__like:not(.comment__like--panorama) {
+      position: absolute;
+      bottom: 23px;
+      left: 27px;
+    }
   }
 
   .comment:not(.comment--panorama) {

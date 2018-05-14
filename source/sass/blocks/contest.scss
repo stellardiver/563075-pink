@@ -129,7 +129,7 @@
     width: 22px;
     height: 16px;
 
-    background-image: url("../../img/icon-checkmark.svg");
+    background-image: url("../img/icon-checkmark.svg");
   }
 
   &:hover,
@@ -454,8 +454,8 @@
       right: 60px;
 
       content: "";
-      width: 60px;
-      height: 60px;
+      width: 58px;
+      height: 59px;
       display: block;
 
       background-color: $input-border;
@@ -466,13 +466,13 @@
 
   .contest__wrapper--phone {
     &::after {
-      background-image: url("../../img/icon-phone.svg");
+      background-image: url("../img/icon-phone.svg");
     }
   }
 
   .contest__wrapper--email {
     &::after {
-      background-image: url("../../img/icon-mail.svg");
+      background-image: url("../img/icon-mail.svg");
     }
   }
 
@@ -572,6 +572,24 @@
   .contest__textarea {
     width: 500px;
     height: 193px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .contest__input--field {
+      padding: 15px 20px 20px;
+    }
+
+    .contest__wrapper--phone {
+      &::after {
+        right: 56px;
+      }
+    }
+
+    .contest__wrapper--email {
+      &::after {
+        right: 64px;
+      }
+    }
   }
 }
 

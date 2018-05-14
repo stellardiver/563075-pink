@@ -70,13 +70,19 @@
 }
 
 .elements__input::-ms-track {
-  cursor: pointer;
+  height: 14px;
   background: transparent;
   border-color: transparent;
   color: transparent;
 }
 
-.elements__input::-ms-fill {
+.elements__input::-ms-fill-lower {
+  height: 2px;
+  background-color: $font-color;
+}
+
+.elements__input::-ms-fill-upper {
+  height: 2px;
   background-color: $font-color;
 }
 
@@ -205,6 +211,12 @@
     width: 16px;
     height: 16px;
   }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .elements__item {
+      padding: 12px 18px 7px 7px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -240,5 +252,11 @@
   .elements__svg--contrast {
     width: 31.92px;
     height: 31.92px;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .elements__item {
+      padding: 12px 30px 0 0;
+    }
   }
 }

@@ -180,7 +180,7 @@
     min-height: 200px;
 
     background-color: #f3f1ea;
-    background-image: url("../../img/bg-map-mobile@1x.png");
+    background-image: url("../img/bg-map-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: 320px;
     background-position: 0 -448px;
@@ -196,12 +196,12 @@
       width: 35.983px;
       height: 35.983px;
 
-      background-image: url("../../img/icon-map-marker.svg");
+      background-image: url("../img/icon-map-marker.svg");
       background-repeat: no-repeat;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-map-mobile@2x.jpg");
+      background-image: url("../img/bg-map-mobile@2x.jpg");
       background-size: 320px;
     }
   }
@@ -212,7 +212,7 @@
     width: 100%;
     min-height: 371px;
 
-    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-size: 700px;
     background-position: center -350px;
@@ -228,12 +228,12 @@
       width: 35.983px;
       height: 35.983px;
 
-      background-image: url("../../img/icon-map-marker.svg");
+      background-image: url("../img/icon-map-marker.svg");
       background-repeat: no-repeat;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-map-tablet@2x.jpg");
+      background-image: url("../img/bg-map-tablet@2x.jpg");
       background-size: 700px;
     }
   }
@@ -244,7 +244,7 @@
     width: 100%;
     min-height: 501px;
 
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: 1200px;
     background-position: center -278px;
@@ -260,12 +260,12 @@
       width: 35.983px;
       height: 35.983px;
 
-      background-image: url("../../img/icon-map-marker.svg");
+      background-image: url("../img/icon-map-marker.svg");
       background-repeat: no-repeat;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/bg-map-desktop@2x.jpg");
+      background-image: url("../img/bg-map-desktop@2x.jpg");
     }
   }
 }
