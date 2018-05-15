@@ -6,8 +6,25 @@
 }
 
 .photos__panorama {
+  position: relative;
+
   margin: 0 auto;
   margin-bottom: 20px;
+
+  &::before {
+    position: absolute;
+    right: 20px;
+    z-index: 10;
+
+    content: "Панорама дня";
+    display: block;
+    padding: 6px 21px;
+
+    @include fonts(12px, 24px, 600, #ffffff);
+    text-transform: uppercase;
+
+    background-color: $raspberry;
+  }
 }
 
 .photos__image-panorama {
@@ -82,6 +99,10 @@
 
   .photos__panorama {
     margin-bottom: 50px;
+
+    &::before {
+      top: 57px;
+    }
   }
 
   .photos__image-panorama {
@@ -105,5 +126,12 @@
 
   .photos__item:not(:nth-last-child(-n+3)) {
     margin-bottom: 54px;
+  }
+
+  .photos__panorama {
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
