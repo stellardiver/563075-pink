@@ -65,10 +65,6 @@
   text-align: center;
 }
 
-.contest__legend--hide {
-  display: none;
-}
-
 .contest__wrapper {
   display: flex;
   width: 100%;
@@ -391,6 +387,21 @@
   }
 }
 
+@supports (-ms-ime-align:auto) {
+  .contest__fieldset--achievments,
+  .contest__fieldset--app {
+    padding-top: 43px;
+    margin-top: 0;
+
+    background-color: $grey;
+  }
+
+  .contest__legend--achievments,
+  .contest__legend--app {
+    padding-top: 30px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contest {
     margin-bottom: 89px;
@@ -563,11 +574,13 @@
     padding: 0 25px;
   }
 
-  .contest__legend--hide {
-    display: block;
-  }
-
   .contest__legend--info {
+    position: static;
+    clip: auto;
+    overflow: visible;
+
+    height: auto;
+    width: auto;
     margin-right: 185px;
   }
 
@@ -643,6 +656,12 @@
       margin-left: 65px;
     }
 
+    .contest__legend--emotions {
+      margin-left: 125px;
+    }
+  }
+
+  @supports (-ms-ime-align:auto) {
     .contest__legend--emotions {
       margin-left: 125px;
     }
@@ -832,6 +851,16 @@
       &::after {
         right: 57px;
       }
+    }
+  }
+
+  @supports (-ms-ime-align:auto) {
+    .contest__legend--emotions {
+      margin-left: 290px;
+    }
+
+    .contest__legend--info {
+      margin-left: 285px;
     }
   }
 }

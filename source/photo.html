@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </head>
@@ -245,7 +248,8 @@
             <ul class="posting__list elements">
               <li class="elements__item elements__item--crop">
                 <button class="elements__button elements__button--crop" type="button" aria-label="Обрезать фото">
-                  <svg class="elements__svg elements__svg--crop elements__svg--active" width="48px" height="48px" viewBox="0 0 48 48">
+                  <svg class="elements__svg elements__svg--crop elements__svg--active" width="48px" height="48px" viewBox="0 0 48 48" aria-labelledby="crop">
+                    <title id="crop">Обрезать фото</title>
                     <use xlink:href="img/sprite.svg#crop"></use>
                   </svg>
                 </button>
@@ -255,7 +259,8 @@
               </li>
               <li class="elements__item elements__item--fill">
                 <button class="elements__button elements__button--fill" type="button" aria-label="Изменить цвет">
-                  <svg class="elements__svg elements__svg--fill" width="48px" height="48px" viewBox="0 0 48 48">
+                  <svg class="elements__svg elements__svg--fill" width="48px" height="48px" viewBox="0 0 48 48" aria-labelledby="fill">
+                    <title id="fill">Изменить цвет</title>
                     <use xlink:href="img/sprite.svg#fill"></use>
                   </svg>
                 </button>
@@ -265,7 +270,8 @@
               </li>
               <li class="elements__item elements__item--contrast">
                 <button class="elements__button elements__button--contrast" type="button" aria-label="Изменить контраст">
-                  <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px" viewBox="0 0 31.92 31.92">
+                  <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px" viewBox="0 0 31.92 31.92" aria-labelledby="contrast">
+                    <title id="contrast">Изменить контраст</title>
                     <use xlink:href="img/sprite.svg#contrast"></use>
                   </svg>
                 </button>

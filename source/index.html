@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/picturefill.js"></script>
+    <script src="js/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
   </head>
@@ -70,7 +73,8 @@
             <ul class="download-app__list os">
               <li class="os__item">
                 <a class="os__link os__link--apple" href="https://www.appstore.com/" target="blank" aria-label="Для устройств Apple">
-                  <svg width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753">
+                  <svg width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" aria-labelledby="apple">
+                    <title id="apple">Для устройств Apple</title>
                     <use xlink:href="img/sprite.svg#apple"></use>
                   </svg>
                   <span class="visually-hidden"></span>
@@ -78,14 +82,16 @@
               </li>
               <li class="os__item">
                 <a class="os__link os__link--android" href="https://play.google.com/store/apps/" target="blank" aria-label="Для устройств Android">
-                  <svg width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041">
+                  <svg width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" aria-labelledby="android">
+                    <title id="android">Для устройств Android</title>
                     <use xlink:href="img/sprite.svg#android"></use>
                   </svg>
                 </a>
               </li>
               <li class="os__item">
                 <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" target="blank" aria-label="Для устройств Windows">
-                  <svg width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992">
+                  <svg width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" aria-labelledby="windows">
+                    <title id="windows">Для устройств Windows</title>
                     <use xlink:href="img/sprite.svg#windows"></use>
                   </svg>
                 </a>
@@ -288,7 +294,7 @@
             </li>
             <li class="contacts__item">
               <b class="contacts__title">Пишите:</b>
-              <a class="contacts__link" href="#" aria-label="Электронная почта">mail@htmlacademy.ru</a>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__title">Приезжайте в гости:</b>
