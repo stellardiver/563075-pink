@@ -220,39 +220,39 @@
             </picture>
             <ul class="posting__list elements">
               <li class="elements__item elements__item--crop">
-                <label class="elements__label" for="crop-range">
-                  <button class="elements__button" type="button" aria-label="Обрезать фото">
-                    <svg class="elements__svg elements__svg--crop elements__svg--active" width="48px" height="48px" viewBox="0 0 48 48">
-                      <use xlink:href="img/sprite.svg#crop"></use>
-                    </svg>
-                  </button>
+                <button class="elements__button elements__button--crop" type="button" aria-label="Обрезать фото">
+                  <svg class="elements__svg elements__svg--crop elements__svg--active" width="48px" height="48px" viewBox="0 0 48 48">
+                    <use xlink:href="img/sprite.svg#crop"></use>
+                  </svg>
+                </button>
+                <label class="elements__label elements__label--crop" for="crop-range">
+                  <input class="elements__input elements__input--crop" type="range" id="crop-range" value="25">
                 </label>
-                <input class="elements__input elements__input--crop" type="range" id="crop-range" value="25">
               </li>
               <li class="elements__item elements__item--fill">
-                <label class="elements__label" for="fill-range">
-                  <button class="elements__button" type="button" aria-label="Изменить цвет">
-                    <svg class="elements__svg elements__svg--fill" width="48px" height="48px" viewBox="0 0 48 48">
-                      <use xlink:href="img/sprite.svg#fill"></use>
-                    </svg>
-                  </button>
+                <button class="elements__button elements__button--fill" type="button" aria-label="Изменить цвет">
+                  <svg class="elements__svg elements__svg--fill" width="48px" height="48px" viewBox="0 0 48 48">
+                    <use xlink:href="img/sprite.svg#fill"></use>
+                  </svg>
+                </button>
+                <label class="elements__label elements__label--fill" for="fill-range">
+                  <input class="elements__input elements__input--fill" type="range" id="fill-range" value="90">
                 </label>
-                <input class="elements__input elements__input--fill" type="range" id="fill-range" value="90">
               </li>
               <li class="elements__item elements__item--contrast">
+                <button class="elements__button elements__button--contrast" type="button" aria-label="Изменить контраст">
+                  <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px" viewBox="0 0 31.92 31.92">
+                    <use xlink:href="img/sprite.svg#contrast"></use>
+                  </svg>
+                </button>
                 <label class="elements__label elements__label--contrast" for="contrast-range">
-                  <button class="elements__button" type="button" aria-label="Изменить контраст">
-                    <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px" viewBox="0 0 31.92 31.92">
-                      <use xlink:href="img/sprite.svg#contrast"></use>
-                    </svg>
-                  </button>
+                  <input class="elements__input elements__input--contrast" type="range" id="contrast-range" value="60">
                 </label>
-                <input class="elements__input elements__input--contrast" type="range" id="contrast-range" value="60">
               </li>
             </ul>
             <div class="posting__buttons publicate">
-              <button class="publicate__btn publicate__btn--submit" type="submit">Запостить</button>
-              <button class="publicate__btn publicate__btn--reset" type="reset">Отмена</button>
+              <button class="publicate__btn publicate__btn--submit" type="submit"><span class="publicate__btn-text">Запостить</span></button>
+              <button class="publicate__btn publicate__btn--reset" type="reset"><span class="publicate__btn-text">Отмена</span></button>
             </div>
           </div>
         </form>

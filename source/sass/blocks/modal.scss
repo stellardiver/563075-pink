@@ -94,6 +94,10 @@
   }
 }
 
+.modal__button-text {
+  position: relative;
+}
+
 @media (min-width: $tablet-width) {
   .modal {
     width: 460px;

@@ -2,20 +2,20 @@
 @import "../variables.scss";
 
 .elements {
+  @include reset-list;
   position: relative;
 
-  @include reset-list;
   display: flex;
   justify-content: space-evenly;
   width: 280px;
   margin: 0 auto;
-  min-height: 155px;
+  min-height: 163px;
   padding-top: 43px;
   box-sizing: border-box;
 
   &::after {
     position: absolute;
-    top: 154px;
+    top: 161px;
 
     content: "";
     width: 320px;
@@ -41,10 +41,13 @@
   margin: 0 auto;
 }
 
-.elements__input {
+.elements__label {
   position: absolute;
+}
 
-  width: 240px;
+.elements__input {
+  width: 100%;
+
   appearance: none;
 }
 
@@ -121,12 +124,16 @@
   background-color: $font-color;
 }
 
-.elements__input--crop {
-  top: 118px;
+.elements__label--crop {
+  top: 110px;
   right: 20px;
+
+  width: 240px;
 }
 
 .elements__svg {
+  position: relative;
+
   fill: $font-color;
   opacity: 0.3;
 
@@ -141,20 +148,31 @@
   opacity: 1;
 }
 
-.elements__label,
-.elements__item--fill,
-.elements__item--contrast {
-  width: 50px;
-}
-
+.elements__label--fill,
 .elements__label--contrast {
-  width: 32px;
-  margin-left: 5px;
+  display: none;
 }
 
-.elements__input--fill,
-.elements__input--contrast {
-  display: none;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .elements {
+    justify-content: center;
+    margin: 0 auto;
+
+    &::after {
+      left: -20px;
+    }
+  }
+
+  .elements__item {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+  }
+
+  .elements__button--contrast {
+    padding-top: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -170,8 +188,8 @@
     }
   }
 
-  .elements__input--fill,
-  .elements__input--contrast {
+  .elements__label--fill,
+  .elements__label--contrast {
     display: block;
   }
 
@@ -188,10 +206,11 @@
     padding-top: 0;
   }
 
-  .elements__input {
+  .elements__label {
     position: static;
 
     width: 203px;
+    padding-bottom: 9px;
   }
 
   .elements__svg {
@@ -220,9 +239,27 @@
     height: 16px;
   }
 
+  .elements__button--contrast {
+    margin-left: 5px;
+  }
+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .elements__item {
-      padding: 12px 18px 7px 7px;
+      margin-left: 0;
+    }
+
+    .elements__button--contrast {
+      margin-left: 20px;
+    }
+
+    .elements__label {
+      padding: 10px 20px 0 0;
+    }
+  }
+
+  @supports (-moz-appearance:none) {
+    .elements__label {
+      padding-bottom: 0;
     }
   }
 }
@@ -247,8 +284,9 @@
     padding-top: 0;
   }
 
-  .elements__input {
+  .elements__label {
     width: 285px;
+    padding-bottom: 18px;
   }
 
   .elements__svg--crop {
@@ -269,6 +307,24 @@
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .elements__item {
       padding: 12px 30px 0 0;
+    }
+
+    .elements__item--contrast {
+      padding-top: 18px;
+    }
+
+    .elements__button--contrast {
+      margin-left: 40px;
+    }
+
+    .elements__label {
+      padding-bottom: 0;
+    }
+  }
+
+  @supports (-moz-appearance:none) {
+    .elements__label {
+      padding-bottom: 0;
     }
   }
 }
