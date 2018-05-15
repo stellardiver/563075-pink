@@ -329,7 +329,7 @@
   text-align: center;
 }
 
-.contest__required--mark {
+.contest__mark {
   color: $raspberry;
   font-weight: 700;
 }
@@ -368,7 +368,7 @@
   }
 }
 
-.contest__required--fill {
+.contest__fill {
   display: none;
 }
 
@@ -387,7 +387,7 @@
   }
 
   .contest__form-fill {
-    display: inline-block;
+    display: inline;
   }
 
   .contest__form {
@@ -482,6 +482,7 @@
 
   .contest__input--field {
     margin-bottom: 0;
+    padding-right: 70px;
   }
 
   .contest__input--second-name,
@@ -574,6 +575,24 @@
     height: 193px;
   }
 
+  @supports (-moz-appearance:none) {
+    .contest__legend--info {
+      margin-right: 0;
+    }
+
+    .contest__legend--achievments {
+      margin-left: 45px;
+    }
+
+    .contest__legend--app {
+      margin-left: 65px;
+    }
+
+    .contest__legend--emotions {
+      margin-left: 125px;
+    }
+  }
+
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .contest__input--field {
       padding: 15px 20px 20px;
@@ -589,6 +608,18 @@
       &::after {
         right: 64px;
       }
+    }
+
+    .contest__legend--achievments {
+      margin-left: 45px;
+    }
+
+    .contest__legend--app {
+      margin-left: 65px;
+    }
+
+    .contest__legend--emotions {
+      margin-left: 125px;
     }
   }
 }
@@ -733,7 +764,43 @@
     margin-bottom: 0;
   }
 
-  .contest__required--fill {
-    display: inline-block;
+  .contest__fill {
+    display: inline;
+  }
+
+  @supports (-moz-appearance:none) {
+    .contest__legend--info {
+      margin-left: 265px;
+    }
+
+    .contest__legend--achievments {
+      margin-left: 180px;
+    }
+
+    .contest__legend--app {
+      margin-left: 30px;
+    }
+
+    .contest__legend--emotions {
+      margin-left: 270px;
+    }
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .contest__legend--emotions {
+      margin-left: 270px;
+    }
+
+    .contest__legend--achievments {
+      margin-left: 180px;
+    }
+
+    .contest__legend--info {
+      margin-left: 265px;
+    }
+
+    .contest__legend--app {
+      margin-left: 30px;
+    }
   }
 }

@@ -10,12 +10,17 @@
   @include margin-padding-reset;
   width: 260px;
   margin: 0 auto;
-  padding-top: 43px;
+  padding-top: 37px;
   padding-bottom: 42px;
 
   text-align: center;
 
   @include fonts($line-height: 30px);
+}
+
+.posting__image {
+  display: block;
+  margin: 0 auto;
 }
 
 .posting__form {
@@ -47,6 +52,7 @@
   .posting__image {
     width: 300px;
     height: 400px;
+    margin: 0;
   }
 
   .posting__list {

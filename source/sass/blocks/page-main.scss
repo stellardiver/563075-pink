@@ -2,7 +2,7 @@
 @import "../variables.scss";
 
 .page-main--index {
-  padding-top: 462px;
+  padding-top: 465px;
 }
 
 .page-main__title {
@@ -12,7 +12,7 @@
 .page-main__title--form {
   display: block;
   width: 235px;
-  padding-top: 98px;
+  padding-top: 99px;
   padding-bottom: 54px;
   margin: 0 auto;
 
@@ -21,7 +21,7 @@
 
 .page-main__title--photo {
   width: 175px;
-  padding-top: 98px;
+  padding-top: 99px;
   padding-bottom: 83px;
   margin: 0 auto;
 
@@ -30,7 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main--index {
-    padding-top: 210px;
+    padding-top: 177px;
   }
 
   .page-main__title {
@@ -39,26 +39,30 @@
 
   .page-main__title--form {
     width: 475px;
-    padding-top: 185px;
+    padding-top: 181px;
     padding-bottom: 80px;
   }
 
   .page-main__title--photo {
     width: 360px;
-    padding-top: 185px;
+    padding-top: 181px;
     padding-bottom: 140px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main--index {
+    padding-top: 211px;
+  }
+
   .page-main__title--form {
-    padding-top: 202px;
+    padding-top: 203px;
     padding-bottom: 101px;
     width: 750px;
   }
 
   .page-main__title--photo {
-    padding-top: 202px;
+    padding-top: 203px;
     padding-bottom: 101px;
   }
 }
@@ -71,6 +75,7 @@
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: 0 3px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -87,12 +92,12 @@
     background-color: #263442;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 1200px 765px;
+    background-size: 1200px 732px;
     background-position: center 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px 765px;
+      background-size: 1200px 732px;
     }
   }
 }
@@ -104,8 +109,8 @@
     background-color: #263442;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: 2560px 883px;
-    background-position: center 0;
+    background-size: 2560px 850px;
+    background-position: center 32px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");

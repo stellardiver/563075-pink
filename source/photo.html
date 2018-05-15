@@ -68,13 +68,13 @@
         <p class="photos__offer">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="photos__panorama">
           <a class="photos__link photos__link--panorama" href="#">
-            <picture>
+            <picture class="photos__picture">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-              <img class="photos__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня">
+              <img class="photos__image-panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Панорама дня">
             </picture>
           </a>
-          <div class="container">
+          <div class="container container--photos">
             <blockquote class="photos__quote comment comment--panorama">
               <cite class="comment__author comment__author--panorama">Анна
                 <time class="comment__author comment__author--time" datetime="2018">(5 минут назад)</time>
@@ -227,7 +227,7 @@
                     </svg>
                   </button>
                 </label>
-                <input class="elements__input elements__input--crop" type="range" id="crop-range">
+                <input class="elements__input elements__input--crop" type="range" id="crop-range" value="25">
               </li>
               <li class="elements__item elements__item--fill">
                 <label class="elements__label" for="fill-range">
@@ -237,17 +237,17 @@
                     </svg>
                   </button>
                 </label>
-                <input class="elements__input elements__input--fill" type="range" id="fill-range">
+                <input class="elements__input elements__input--fill" type="range" id="fill-range" value="90">
               </li>
               <li class="elements__item elements__item--contrast">
                 <label class="elements__label elements__label--contrast" for="contrast-range">
                   <button class="elements__button" type="button" aria-label="Изменить контраст">
-                    <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px">
+                    <svg class="elements__svg elements__svg--contrast" width="31.92px" height="31.92px" viewBox="0 0 31.92 31.92">
                       <use xlink:href="img/sprite.svg#contrast"></use>
                     </svg>
                   </button>
                 </label>
-                <input class="elements__input elements__input--contrast" type="range" id="contrast-range">
+                <input class="elements__input elements__input--contrast" type="range" id="contrast-range" value="60">
               </li>
             </ul>
             <div class="posting__buttons publicate">

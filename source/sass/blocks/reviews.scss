@@ -24,7 +24,7 @@
   margin: 0 auto;
 }
 
-.review__item {
+.reviews__item {
   @include reset-list;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.review__author {
+.reviews__author {
   @include fonts(18px, 30px, 700, #000000);
 
   display: block;
@@ -42,14 +42,14 @@
   text-align: center;
 }
 
-.review__author-info {
+.reviews__author-info {
   display: none;
 
   @include fonts(14px, 30px);
   font-style: normal;
 }
 
-.review__text {
+.reviews__text {
   @include margin-padding-reset;
   @include fonts($line-height: 30px);
 
@@ -81,22 +81,22 @@
     width: 1860px;
   }
 
-  .review__item {
+  .reviews__item {
     width: 620px;
   }
 
-  .review__author {
+  .reviews__author {
     order: 2;
 
     font-size: 20px;
   }
 
-  .review__author-info {
+  .reviews__author-info {
     display: block;
     order: 2;
   }
 
-  .review__text {
+  .reviews__text {
     order: 1;
     padding-top: 18px;
     padding-bottom: 34px;
@@ -181,19 +181,19 @@
     width: 2820px;
   }
 
-  .review__item {
+  .reviews__item {
     width: 940px;
   }
 
-  .review__author-info {
+  .reviews__author-info {
     @include fonts(18px, 30px);
   }
 
-  .review__author {
+  .reviews__author {
     font-size: 24px;
   }
 
-  .review__text {
+  .reviews__text {
     width: 690px;
     margin: 0 auto;
     padding: 15px 0 37px;

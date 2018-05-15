@@ -19,7 +19,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   margin: 0 auto;
 }
 
@@ -72,7 +72,7 @@ a {
 
   .container--header {
     padding-top: 27px;
-    padding-bottom: 39px;
+    padding-bottom: 42px;
   }
 
   .container--form {
@@ -138,6 +138,10 @@ a {
 
   .container--offer {
     margin-bottom: 71px;
+  }
+
+  .container--form {
+    padding: 0;
   }
 
   .container--form-app {

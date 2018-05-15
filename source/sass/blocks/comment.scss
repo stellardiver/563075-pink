@@ -12,13 +12,15 @@
 }
 
 .comment:not(.comment--panorama) {
-  padding: 18px 17px 19px;
+  padding: 18px 17px 20px;
 }
 
 .comment--panorama {
   position: relative;
 
   padding: 18px 18px 19px;
+  width: 280px;
+  margin: 0 auto;
 
   &::before {
     position: absolute;
@@ -55,7 +57,7 @@
 }
 
 .comment__author--time {
-  @include fonts($font-size: 12px, $font-weight: 300);
+  @include fonts($font-size: 11.5px, $font-weight: 300);
   text-transform: uppercase;
 }
 

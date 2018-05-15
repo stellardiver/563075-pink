@@ -10,7 +10,7 @@
     left: 0;
 
     content: "";
-    display: inline-block;
+    display: block;
     width: 258px;
     height: 286px;
 
@@ -27,7 +27,7 @@
 .download-app__wrapper {
   width: 280px;
   padding-top: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 29px;
   margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@
       left: -3%;
 
       content: "";
-      display: inline-block;
+      display: block;
       width: 660px;
       height: 545px;
 
@@ -107,7 +107,7 @@
     @include margin-padding-reset;
     @include fonts(40px, 48px, 300, #ffffff);
     margin: 0 auto;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 
     text-align: center;
   }
@@ -132,7 +132,7 @@
       left: 28px;
 
       content: "";
-      display: inline-block;
+      display: block;
       width: 900px;
       height: 645px;
 
@@ -149,16 +149,17 @@
 
   .download-app__claim {
     width: 240px;
+    margin-bottom: 0;
 
-    @include fonts(50px, 58px, 300, #ffffff);
+    @include fonts(50px, 60px, 300, #ffffff);
   }
 
   .download-app__wrapper {
-    padding: 40px 0 122px 0;
+    padding: 38px 0 122px 0;
   }
 
   .download-app__btn {
-    margin: 55px 0 65px;
+    margin: 52px 0 65px;
     padding: 14px 0 17px;
 
     font-size: 21px;
