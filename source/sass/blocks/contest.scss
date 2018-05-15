@@ -376,6 +376,21 @@
   display: none;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .contest__fieldset--achievments,
+  .contest__fieldset--app {
+    padding-top: 43px;
+    margin-top: 0;
+
+    background-color: $grey;
+  }
+
+  .contest__legend--achievments,
+  .contest__legend--app {
+    padding-top: 30px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .contest {
     margin-bottom: 89px;
@@ -602,15 +617,21 @@
       padding: 15px 20px 20px;
     }
 
+    .contest__wrapper--top-info {
+      &::after {
+        height: 60px;
+      }
+    }
+
     .contest__wrapper--phone {
       &::after {
-        right: 56px;
+        right: 60px;
       }
     }
 
     .contest__wrapper--email {
       &::after {
-        right: 64px;
+        right: 60px;
       }
     }
 
@@ -805,6 +826,12 @@
 
     .contest__legend--app {
       margin-left: 30px;
+    }
+
+    .contest__wrapper--phone {
+      &::after {
+        right: 57px;
+      }
     }
   }
 }
