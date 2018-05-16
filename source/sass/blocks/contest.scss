@@ -638,13 +638,13 @@
 
     .contest__wrapper--phone {
       &::after {
-        right: 60px;
+        right: 42px;
       }
     }
 
     .contest__wrapper--email {
       &::after {
-        right: 60px;
+        right: 42px;
       }
     }
 
@@ -831,6 +831,10 @@
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .contest__form {
+      width: 920px;
+    }
+
     .contest__legend--emotions {
       margin-left: 270px;
     }
@@ -849,8 +853,30 @@
 
     .contest__wrapper--phone {
       &::after {
-        right: 57px;
+        right: 46px;
       }
+    }
+
+    .contest__wrapper--email {
+      &::after {
+        right: 53px;
+      }
+    }
+
+    .contest__wrapper--aside:first-child {
+      margin-right: 45px;
+    }
+
+    .contest__wrapper--aside:nth-child(2) {
+      margin-right: 45px;
+    }
+
+    .contest__wrapper--aside:nth-child(3) {
+      margin-right: 25px;
+    }
+
+    .contest__wrapper--aside:nth-child(4) {
+      margin-right: 25px;
     }
   }
 

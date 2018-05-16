@@ -69,18 +69,6 @@
     min-height: 150px;
   }
 
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .comment {
-      position: relative;
-    }
-
-    .comment__like:not(.comment__like--panorama) {
-      position: absolute;
-      bottom: 23px;
-      left: 27px;
-    }
-  }
-
   .comment:not(.comment--panorama) {
     padding: 24px 27px 22px;
     min-height: 155px;
@@ -120,6 +108,18 @@
   .comment__text--panorama,
   .comment__text {
     padding-bottom: 0;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .comment {
+      position: relative;
+    }
+
+    .comment__like:not(.comment__like--panorama) {
+      position: absolute;
+      bottom: 23px;
+      left: 27px;
+    }
   }
 }
 

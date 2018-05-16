@@ -114,6 +114,12 @@
   color: $raspberry;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .features__svg-triangle {
+    overflow: hidden;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .features__effect-24--hide {
     display: block;
@@ -139,7 +145,7 @@
 
   .features__image--tablet {
     position: absolute;
-    top: -47px;
+    bottom: 0;
     left: 20px;
 
     display: block;
@@ -456,5 +462,11 @@
     display: block;
     padding-top: 10px;
     text-align: center;
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .features__list {
+      width: 920px;
+    }
   }
 }

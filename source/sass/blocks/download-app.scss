@@ -68,11 +68,18 @@
 
 @media (min-width: $tablet-width) {
   .download-app {
+    position: relative;
+
     max-width: 660px;
     margin: 0 auto;
 
     &::before {
-      top: 8px;
+      content: none;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
       left: -3%;
 
       content: "";
@@ -127,8 +134,8 @@
   .download-app {
     max-width: 960px;
 
-    &::before {
-      top: 28px;
+    &::after {
+      bottom: 0;
       left: 28px;
 
       content: "";
