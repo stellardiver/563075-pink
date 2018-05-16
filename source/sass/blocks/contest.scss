@@ -665,6 +665,18 @@
     .contest__legend--emotions {
       margin-left: 125px;
     }
+
+    .contest__wrapper--phone {
+      &::after {
+        right: 42px;
+      }
+    }
+
+    .contest__wrapper--email {
+      &::after {
+        right: 42px;
+      }
+    }
   }
 }
 
@@ -881,12 +893,44 @@
   }
 
   @supports (-ms-ime-align:auto) {
+    .contest__form {
+      width: 920px;
+    }
+
     .contest__legend--emotions {
       margin-left: 290px;
     }
 
     .contest__legend--info {
       margin-left: 285px;
+    }
+
+    .contest__wrapper--phone {
+      &::after {
+        right: 46px;
+      }
+    }
+
+    .contest__wrapper--email {
+      &::after {
+        right: 53px;
+      }
+    }
+
+    .contest__wrapper--aside:first-child {
+      margin-right: 45px;
+    }
+
+    .contest__wrapper--aside:nth-child(2) {
+      margin-right: 45px;
+    }
+
+    .contest__wrapper--aside:nth-child(3) {
+      margin-right: 25px;
+    }
+
+    .contest__wrapper--aside:nth-child(4) {
+      margin-right: 25px;
     }
   }
 }

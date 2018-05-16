@@ -469,4 +469,10 @@
       width: 920px;
     }
   }
+
+  @supports (-ms-ime-align:auto) {
+    .features__list {
+      width: 920px;
+    }
+  }
 }
