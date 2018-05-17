@@ -3,4 +3,62 @@
 
 .social {
   @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  width: 177px;
+  margin-bottom: 32px;
+}
+
+.social__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    border: 3px solid $font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+    border: 3px solid #e9ebec;
+  }
+}
+
+.social__link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.social__link--facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.social__link--youtube {
+  background-image: url("../img/icon-youtube.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .social--index {
+    margin-left: 5px;
+  }
 }

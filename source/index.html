@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -11,39 +14,34 @@
       <div class="header__wrapper">
         <div class="container container--header">
           <a class="header__link">
-            <svg class="header__svg" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
-              <g>
-                <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
-                <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
-                <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
-                <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
-              </g>
+            <svg class="header__logo header__logo--mobile" aria-labelledby="logo-mobile" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" fill="#ffffff">
+              <title id="logo-mobile">Логотип Пинк</title>
+              <use xlink:href="img/sprite.svg#logo-pink-white-mobile"></use>
             </svg>
-            <span class="visually-hidden">Логотип Пинк</span>
+            <svg class="header__logo header__logo--tablet" aria-labelledby="logo-tablet" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" fill="#ffffff">
+              <title id="logo-tablet">Логотип Пинк</title>
+              <use xlink:href="img/sprite.svg#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="header__logo header__logo--desktop" aria-labelledby="logo-desktop" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" fill="#ffffff">
+              <title id="logo-desktop">Логотип Пинк</title>
+              <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
+            </svg>
           </a>
           <button class="header__toggle" type="button">
-            <svg class="header__svg header__svg-open" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-              <g id="miu">
-                <g id="editor_list_view_hambuger_menu_glyph">
-                  <g>
-                    <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                  <g>
-                    <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
-                  </g>
-                </g>
-              </g>
+            <svg class="header__svg header__svg-open" aria-labelledby="open-menu" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" fill="#ffffff">
+              <title id="open-menu">Показать меню</title>
+              <use xlink:href="img/sprite.svg#icon-menu-burger"></use>
             </svg>
-            <svg class="header__svg header__svg-close" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-              <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+            <svg class="header__svg header__svg-close" aria-labelledby="close-menu" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" fill="#ffffff">
+              <title id="close-menu">Закрыть меню</title>
+              <use xlink:href="img/sprite.svg#icon-menu-cross"></use>
             </svg>
-            <span class="visually-hidden">Открыть и закрытие меню</span>
           </button>
         </div>
         <nav class="header__navigation">
           <ul class="header__list menu">
             <li class="menu__item">
-              <a class="menu__link">Главная</a>
+              <a class="menu__link menu__link--active">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="photo.html">Фотографии</a>
@@ -68,38 +66,31 @@
         <div class="container container--app">
           <div class="download-app__wrapper">
             <p class="download-app__claim">Взгляните на жизнь иначе!</p>
-            <a class="download-app__btn" href="#">Скачать приложение</a>
+            <a class="download-app__btn" href="https://www.appstore.com/" target="blank">Скачать приложение</a>
             <ul class="download-app__list os">
               <li class="os__item">
-                <a class="os__link os__link--apple" href="#">
-                    <svg version="1.0" width="47" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
-                      <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
-                    </svg>
-                  <span class="visually-hidden">Для устройств Apple</span>
+                <a class="os__link os__link--apple" href="https://www.appstore.com/" target="blank" aria-label="Для устройств Apple">
+                  <svg width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" aria-labelledby="apple">
+                    <title id="apple">Для устройств Apple</title>
+                    <use xlink:href="img/sprite.svg#apple"></use>
+                  </svg>
+                  <span class="visually-hidden"></span>
                 </a>
               </li>
               <li class="os__item">
-                <a class="os__link os__link--android" href="#">
-                    <svg version="1.1" width="43" height="47" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
-                      <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
-                      <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
-                      <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
-                      <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z"/>
-                    </svg>
-                  <span class="visually-hidden">Для устройств на Android</span>
+                <a class="os__link os__link--android" href="https://play.google.com/store/apps/" target="blank" aria-label="Для устройств Android">
+                  <svg width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" aria-labelledby="android">
+                    <title id="android">Для устройств Android</title>
+                    <use xlink:href="img/sprite.svg#android"></use>
+                  </svg>
                 </a>
               </li>
               <li class="os__item">
-                <a class="os__link os__link--windows" href="#">
-                    <svg version="1.0" width="44" height="41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
-                      <g>
-                        <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
-                        <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
-                        <path id="path5062" fill="#2DABE2" d="M20.873,41.992H0V22.04h20.873V41.992z"/>
-                        <path id="path5064" fill="#F9BC15" d="M43.922,41.992H23.049V22.04h20.873V41.992z"/>
-                      </g>
-                    </svg>
-                  <span class="visually-hidden">Для устройств на Windows</span>
+                <a class="os__link os__link--windows" href="https://www.microsoft.com/ru-ru/store/appsvnext/windows-phone" target="blank" aria-label="Для устройств Windows">
+                  <svg width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" aria-labelledby="windows">
+                    <title id="windows">Для устройств Windows</title>
+                    <use xlink:href="img/sprite.svg#windows"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -118,16 +109,16 @@
           <p class="features__offer">Устали от серости мегаполиса?</p>
           <p class="features__offer">Нам есть, что вам предложить!</p>
         </div>
-        <svg class="features__svg-triangle" version="1.0" width="320" height="38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-          <polygon points="1200,0 0,0 0,94.074"/>
-        </svg>
         <div class="container container--features">
+          <svg class="features__svg-triangle" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" preserveAspectRatio="none">
+            <use xlink:href="img/sprite.svg#features-triangle"></use>
+          </svg>
           <ul class="features__list">
             <li class="features__item">
               <div class="features__image features__image--desktop features__image--desktop1"></div>
               <div class="features__item-wrapper">
-                <h3 class="features__title">Поднимает настроение</h3>
-                <p class="features__text">
+                <h3 class="features__title features__title--mood">Поднимает настроение</h3>
+                <p class="features__text features__text--mood">
                   Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
                 </p>
               </div>
@@ -135,19 +126,19 @@
             <li class="features__item">
               <div class="features__image features__image--desktop features__image--desktop2"></div>
               <div class="features__item-wrapper">
-                <h3 class="features__title">Меняет мир вокруг</h3>
-                <p class="features__text">
+                <h3 class="features__title features__title--world">Меняет мир вокруг</h3>
+                <p class="features__text features__text--world">
                   Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
                 </p>
               </div>
             </li>
-            <li class="features__item">
+            <li class="features__item features__item--friends">
               <div class="features__image features__image--mobile"></div>
               <div class="features__image features__image--tablet"></div>
               <div class="features__image features__image--desktop features__image--desktop3"></div>
               <div class="features__item-wrapper">
-                <h3 class="features__title">Заводит новых друзей</h3>
-                <p class="features__text">
+                <h3 class="features__title features__title--friends">Заводит новых друзей</h3>
+                <p class="features__text features__text--friends">
                   Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
                 </p>
               </div>
@@ -157,7 +148,9 @@
         <div class="container container--features container--effect24">
           <ul class="features__effect-24 features__effect-24--hide">
               <li class="features__item features__item--image-24">
-                <img src="http://placehold.it/238x276">
+                <div class="features__timer">
+                  <span class="features__text-24">24</span>
+                </div>
               </li>
               <li class="features__item features__item--effect-24">
                 <p class="features__title features__title--effect-24">
@@ -165,7 +158,7 @@
                 </p>
                 <p class="features__text features__text--effect-24">
                   Британские ученые провели исследования
-                  и доказали,<br> что положительный эффект
+                  и доказали,<br class="features__paragraph-2"> что положительный эффект
                   от использования приложения длится
                   целые сутки!
                 </p>
@@ -180,25 +173,25 @@
         <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
         <div class="container">
           <div class="reviews__list-wrapper">
-            <div class="reviews__list slider__list">
-              <blockquote class="review__item slider__item">
-                <cite class="review__author">Николай Петров</cite>
-                <cite class="review__author-info">25 лет, водитель трамвая</cite>
-                <p class="review__text">
+            <div class="reviews__list">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <cite class="reviews__author-info">25 лет, водитель трамвая</cite>
+                <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </blockquote>
-              <blockquote class="review__item slider__item">
-                <cite class="review__author">Николай Петров</cite>
-                <cite class="review__author-info">25 лет, водитель трамвая</cite>
-                <p class="review__text">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <cite class="reviews__author-info">25 лет, водитель трамвая</cite>
+                <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </blockquote>
-              <blockquote class="review__item slider__item">
-                <cite class="review__author">Николай Петров</cite>
-                <cite class="review__author-info">25 лет, водитель трамвая</cite>
-                <p class="review__text">
+              <blockquote class="reviews__item">
+                <cite class="reviews__author">Николай Петров</cite>
+                <cite class="reviews__author-info">25 лет, водитель трамвая</cite>
+                <p class="reviews__text">
                   «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
                 </p>
               </blockquote>
@@ -206,7 +199,7 @@
           </div>
         </div>
         <div class="container">
-          <div class="reviews__toggles slider__toggles">
+          <div class="reviews__toggles slider slider--reviews">
             <button class="slider__toggle slider__toggle--active" type="button">
               <span class="visually-hidden">Первый отзыв</span>
             </button>
@@ -217,16 +210,24 @@
               <span class="visually-hidden">Третий отзыв</span>
             </button>
           </div>
+          <div class="reviews__arrow-wrapper">
+            <button class="reviews__arrow reviews__arrow--left" type="button">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button class="reviews__arrow reviews__arrow--right" type="button">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
         </div>
       </section>
 
       <section class="prices">
 
         <h2 class="visually-hidden">Тарифы</h2>
-        <svg class="prices__svg-triangle" version="1.0" width="320" height="38" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1200px" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve">
-          <polygon points="1200,0 0,0 0,94.074"/>
+        <svg class="prices__svg-triangle" width="1200" height="94.074" viewBox="0 0 1200 94.074" preserveAspectRatio="none">
+          <use xlink:href="img/sprite.svg#prices-triangle"></use>
         </svg>
-        <div class="prices__list slider__list">
+        <div class="prices__list">
           <div class="prices__table">
             <div class="prices__column">
               <div class="prices__header-data">
@@ -242,31 +243,31 @@
                 <b class="prices__type">База</b>
                 <p class="prices__value">1,99 USD</p>
               </div>
-              <div class="prices__data">Розовый фильтр</div>
-              <div class="prices__data">Смайлики</div>
-              <div class="prices__data">Комментарии</div>
+              <div class="prices__data prices__data--yes">Розовый фильтр</div>
+              <div class="prices__data prices__data--no">Смайлики</div>
+              <div class="prices__data prices__data--no">Комментарии</div>
             </div>
             <div class="prices__column">
-              <div class="prices__header-data">
+              <div class="prices__header-data prices__header-data--hit">
                 <b class="prices__type">Стандарт</b>
                 <p class="prices__value">3,99 USD</p>
               </div>
-              <div class="prices__data">Розовый фильтр</div>
-              <div class="prices__data">Смайлики</div>
-              <div class="prices__data">Комментарии</div>
+              <div class="prices__data prices__data--yes">Розовый фильтр</div>
+              <div class="prices__data prices__data--yes">Смайлики</div>
+              <div class="prices__data prices__data--no">Комментарии</div>
             </div>
             <div class="prices__column">
               <div class="prices__header-data">
                 <b class="prices__type">Анлим</b>
                 <p class="prices__value">9,99 USD</p>
               </div>
-              <div class="prices__data">Розовый фильтр</div>
-              <div class="prices__data">Смайлики</div>
-              <div class="prices__data">Комментарии</div>
+              <div class="prices__data prices__data--yes">Розовый фильтр</div>
+              <div class="prices__data prices__data--yes">Смайлики</div>
+              <div class="prices__data prices__data--yes">Комментарии</div>
             </div>
           </div>
         </div>
-        <div class="prices__toggles slider__toggles">
+        <div class="prices__toggles slider slider--prices">
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Первый тариф</span>
           </button>
@@ -281,16 +282,16 @@
       <section class="contacts">
 
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="container">
+        <div class="container container--contacts">
           <p class="contacts__offer">Остались вопросы? Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__title">Звоните:</b>
-              <p class="contacts__info">+7 (812) 555-66-66</p>
+              <a class="contacts__link" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__title">Пишите:</b>
-              <p class="contacts__info">mail@htmlacademy.ru</p>
+              <a class="contacts__link" href="mailto:mail@htmlacademy.ru" aria-label="Написать на электронную почту">mail@htmlacademy.ru</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__title">Приезжайте в гости:</b>
@@ -298,52 +299,50 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map">
-          <svg class="contacts__svg-triangle" width="1200" height="94" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
-            <polygon points="297.64,61.905 0,0 595.28,0 "/>
-          </svg>
-        </div>
+        <svg class="contacts__svg-triangle" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" preserveAspectRatio="none">
+          <use xlink:href="img/sprite.svg#contacts-triangle"></use>
+        </svg>
+        <div class="contacts__map" id="contacts__map"></div>
       </section>
     </main>
     <footer class="page-footer page-footer--index">
       <div class="container container--footer">
-        <div class="page-footer__logo logo">
-          <!-- позже заменю <img> на инлайновые SVG -->
-          <img class="logo__image" src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Пинк">
-        </div>
-        <ul class="page-footer__list social">
+        <a class="page-footer__link">
+          <svg class="page-footer__logo page-footer__logo--mobile" aria-labelledby="footer-logo-mobile" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" fill="#283645">
+            <title id="footer-logo-mobile">Логотип Пинк</title>
+            <use xlink:href="img/sprite.svg#logo-pink-blue-mobile"></use>
+          </svg>
+          <svg class="page-footer__logo page-footer__logo--desktop" aria-labelledby="footer-logo-desktop" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" fill="#283645">
+            <title id="footer-logo-desktop">Логотип Пинк</title>
+            <use xlink:href="img/sprite.svg#logo-pink-blue-desktop"></use>
+          </svg>
+        </a>
+        <ul class="page-footer__list social social--index">
           <li class="social__item">
-            <a class="social__link" href="#">
-              <!-- позже заменю <img> на инлайновые SVG -->
-              <img class="social__image social__image--twitter" src="http://placehold.it/18x14" width="18" height="14" alt="Twitter">
-              <span class="visually-hidden">Twitter</span>
-            </a>
+            <a class="social__link social__link--twitter" href="#" aria-label="Twitter"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <!-- позже заменю <img> на инлайновые SVG -->
-              <img class="social__image social__image--facebook" src="http://placehold.it/9x18" width="9" height="18" alt="Twitter">
-              <span class="visually-hidden">Facebook</span>
-            </a>
+            <a class="social__link social__link--facebook" href="#" aria-label="Facebook"></a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <!-- позже заменю <img> на инлайновые SVG -->
-              <img class="social__image social__image--youtube" src="http://placehold.it/15x13" width="15" height="13" alt="Twitter">
-              <span class="visually-hidden">Youtube</span>
-            </a>
+            <a class="social__link social__link--youtube" href="#" aria-label="Youtube"></a>
           </li>
         </ul>
         <div class="page-footer__development development">
           <p class="development__title">Разработано</p>
-          <a class="development__link" href="#">
-            <!-- позже заменю <img> на инлайновые SVG -->
-            <img class="development__image" src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy">
-            <span class="visually-hidden">HTML Academy</span>
+          <a class="development__link" href="https://htmlacademy.ru/intensive/adaptive" target="blank">
+            <svg class="development__logo" width="27" height="34" viewBox="0 0 154 194.84" aria-labelledby="html-academy-logo" fill="#d22856">
+              <title id="html-academy-logo">HTML Academy</title>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/menu-nav.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzlMsK92es0tuxqKuCMLbJh77JJkEY1j0&callback=initMap"></script>
   </body>
 </html>

@@ -1,6 +1,38 @@
 @import "../mixins.scss";
 @import "../variables.scss";
 
+.development {
+  @include flex-between;
+  align-items: center;
+  width: 130px;
+}
+
 .development__title {
   @include fonts($line-height: 18px);
+}
+
+.development__link {
+  @include margin-padding-reset;
+  line-height: 0;
+}
+
+.development__logo {
+  &:hover,
+  &:focus {
+    fill: $font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .development {
+    width: 153px;
+  }
+
+  .development__title {
+    font-size: 18px;
+  }
 }

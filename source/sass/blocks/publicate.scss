@@ -7,50 +7,73 @@
 
   display: block;
   box-sizing: border-box;
+  margin: 0 auto;
+  width: 280px;
+  padding: 15px 0;
 
   border: 3px solid;
   border-radius: 50px;
 }
 
+.publicate__btn-text {
+  position: relative;
+}
+
 .publicate__btn--submit {
-  padding: 15px 88px;
   margin-bottom: 12px;
 
   color: $raspberry;
 
   border-color: $raspberry;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: $raspberry;
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+  }
 }
 
 .publicate__btn--reset {
-  padding: 15px 100px;
-
   color: rgba($color: $font-color, $alpha: 0.1);
 
   border-color: rgba($color: $font-color, $alpha: 0.1);
+
+  &:hover,
+  &:focus {
+    color: rgba($color: $font-color, $alpha: 0.3);
+
+    border-color: rgba($color: $font-color, $alpha: 0.3);
+  }
+
+  &:active {
+    color: rgba($color: #ffffff, $alpha: 0.3);
+    background-color: rgba($color: $font-color, $alpha: 0.3);
+    border-color: rgba($color: $font-color, $alpha: 0);
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .publicate__btn--submit {
-    padding: 15px 70px;
-    margin-bottom: 25px;
+  .publicate__btn {
+    width: 260px;
+    padding: 15px 0;
   }
 
-  .publicate__btn--reset {
-    padding: 15px 80px;
+  .publicate__btn--submit {
+    margin-bottom: 25px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .publicate__btn {
+    width: 183px;
     margin: 0;
   }
 
   .publicate__btn--submit {
-    padding: 15px 38px;
     margin-bottom: 0;
-  }
-
-  .publicate__btn--reset {
-    padding: 15px 52px;
   }
 }
