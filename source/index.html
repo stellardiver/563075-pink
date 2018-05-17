@@ -8,9 +8,6 @@
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/picturefill.min.js"></script>
-    <script src="js/svg4everybody.min.js"></script>
-    <script>svg4everybody();</script>
   </head>
   <body>
     <header class="header">
@@ -290,7 +287,7 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__title">Звоните:</b>
-              <p class="contacts__info">+7 (812) 555-66-66</p>
+              <a class="contacts__link" href="tel:+7-812-555-66-66">+7 (812) 555-66-66</a>
             </li>
             <li class="contacts__item">
               <b class="contacts__title">Пишите:</b>
@@ -342,9 +339,10 @@
         </div>
       </div>
     </footer>
-    <script src="js/menu-nav.js"></script>
-    <script src="js/map.js"></script>
-    <script src="js/marker.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzlMsK92es0tuxqKuCMLbJh77JJkEY1j0&callback=initMap"></script>
   </body>
 </html>

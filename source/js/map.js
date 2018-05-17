@@ -8,6 +8,7 @@ function initMap() {
   var marker = new google.maps.Marker({
     position: uluru,
     map: map,
+    optimized: false,
     title: "Pink",
     icon: {
       url: "../img/icon-map-marker.svg",
